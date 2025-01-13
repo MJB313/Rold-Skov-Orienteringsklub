@@ -561,16 +561,50 @@ ________________________________________________________________________________
 /* ______________________________________________________________________________________________________________________________ */
 /* Events */
 
-.eventsArticle {
-display: flex;
-background-color: violet;
+ .eventsArticle{
+    display: flex; 
+    background-color: red;
+     margin-bottom: 1rem; 
+} 
 
-}
+/* ALT DER STÅR I ARTICLE BURDE STÅ I .EVENTSARTICLE - BUT SHIT DOESN'T WANNA WORK */
+article {
+    background-color: red;
+    display: flex; 
+    width: 80%;
+    height: 500px;
+    margin-bottom: 1rem;
+ }
+
 .eventsArticle img {
-    height: 100px;
-    width: 100px;
-    display: block;
+    height: 300px;
+    width: 400px;
+   
 }
+
+
+/* _____________skrevet af mig selv i codepen, skal se om det virker i vsc_______________ */
+.eventsArticle span p {
+    font-weight: bold;
+  }
+  
+  .eventsArticle td {
+    padding-bottom: 1rem;
+  }
+  
+  td:nth-child(odd) {
+    font-weight: bold;
+    padding-right: 2rem;
+  }
+  
+  .eventsArticle table {
+    padding-top: 2rem;
+  }
+  
+
+
+
+
 /* Events slut */
 /* _______________________________________________________________________________________________________________________________ */
 
