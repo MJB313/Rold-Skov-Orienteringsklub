@@ -614,6 +614,55 @@ ________________________________________________________________________________
 /* _________________________________________________________________________________________________________________________________ */
 /* om orienteringsløb */
 
+.omoMain{
+    max-width: 100%;
+}
+
+#omoHeroImg{
+    width: 100%;
+    height: 60vh;
+    border-radius: none;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.omoMain h2{
+    text-align: center;
+    margin-block: var(--desktopSmallSpacer);
+}
+
+ .omoWidecard {
+   width: 90%;
+   height: 32rem;
+   margin: 0 auto;
+   background-color: #F5F1E4;
+   border-radius: 0.625rem;
+   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: row;
+}
+
+#omoWidecardImg {
+   max-width: 50vw;
+   object-fit: cover;
+   object-position: center center;
+   border-radius: 20px;
+}
+
+.omoWidecard .omoWidecardContent{
+   width: 100%;
+   text-align: left;
+   line-height: 1.8rem;
+   padding-inline: var(--desktopSMSpacer);
+}
+
+.test{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 /* om orienteringsløb slut */
 /* __________________________________________________________________________________________________________________________________ */
 
@@ -633,6 +682,93 @@ ________________________________________________________________________________
 
 /* _________________________________________________________________________________________________________________________________ */
 /* træninger */
+
+
+
+.smallCardWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--dekstopLargeSpacer);
+}
+
+.traH2{
+    text-align: center;
+    padding-top: var(--desktopSmallSpacer);
+}
+
+.traCard {
+    width: 29%;
+    height: 25rem;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: var(--desktopSmallSpacer);
+    padding-bottom: var(--desktopMediumSpacer);
+}
+
+.traCard img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px;
+}
+
+section .traCard h3 {
+    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+    font-weight: var(--fw-semibold);
+    text-align: center;
+    padding-inline: 0.5rem;
+}
+
+.traCard p {
+    font-size: clamp(1rem, 1.5vw, 1.375rem);
+    font-weight: var(--fw-medium);
+    text-align: center;
+    padding-inline: 0.5rem;
+}
+
+.traCard a {
+    display: block;
+    text-align: center;
+    padding-block: 1rem;
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--freshMint);
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: var(--fw-medium);
+    font-size: clamp(0.8rem, 1.3vw, 1.125rem);
+}
+
+.traMain{
+    display: flex;
+}
+
+.traMain img{
+    max-width: 50%;
+    max-height: 37rem;
+    margin-left: var(--dekstopLargeSpacer);
+    margin-right: var(--desktopSmallSpacer);
+    margin-bottom: var(--desktopMediumSpacer);
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.traBody{
+    max-width: 50%;
+    padding-right: var(--dekstopLargeSpacer);
+}
+
+.traBody p{
+    padding-bottom: 1rem;
+}
+
+
 
 /* træninger slut */
 /* __________________________________________________________________________________________________________________________________ */
