@@ -1,0 +1,2 @@
+# Rold-Skov-Orienteringsklub-Template
+ 
