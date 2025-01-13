@@ -597,6 +597,69 @@ ________________________________________________________________________________
   width: 100%;
 }
 
+.omoCards {
+  padding-bottom: var(--desktopMediumSpacer);
+}
+
+.omoCards h2 {
+  text-align: left;
+  padding-left: var(--dekstopLargeSpacer);
+  margin-block: var(--desktopSmallSpacer);
+}
+
+.omoSmallCardWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: var(--dekstopLargeSpacer);
+}
+
+.omoSmallCard {
+  width: 20%;
+  height: 450px;
+  background-color: var(--paleStone);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.omoSmallCard img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 20px 20px 0 0;
+}
+
+section .omoSmallCard h3 {
+  font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+  font-weight: var(--fw-semibold);
+  text-align: center;
+  padding-inline: 0.5rem;
+}
+
+.omoSmallCard p {
+  font-size: clamp(1rem, 1.5vw, 1.375rem);
+  font-weight: var(--fw-medium);
+  text-align: center;
+  padding-inline: 0.5rem;
+}
+
+.omoSmallCard a {
+  display: block;
+  text-align: center;
+  padding-block: 1rem;
+  width: 60%;
+  margin: 0 auto;
+  background-color: var(--freshMint);
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: var(--fw-medium);
+  font-size: clamp(0.8rem, 1.3vw, 1.125rem);
+}
+
 /* om orienteringsløb slut */
 /* __________________________________________________________________________________________________________________________________ */
 
