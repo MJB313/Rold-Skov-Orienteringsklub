@@ -6,7 +6,7 @@
 /* VARIABLES */
 /* ___________________________________ */
 
-:root{
+:root {
 
     /* Farver */
 
@@ -27,7 +27,7 @@
 
     --desktopSmallSpacer: 1.25rem;
     --desktopSMSpacer: 2.25rem;
-    --desktopMediumSpacer:  4.375rem;
+    --desktopMediumSpacer: 4.375rem;
     --dekstopLargeSpacer: 6.25rem;
 
 
@@ -50,7 +50,12 @@
     font-family: "Epilogue", serif;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 
     font-family: "Epilogue", serif;
     font-weight: var(--fw-bold);
@@ -86,7 +91,7 @@ header {
     overflow: hidden;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,9 +128,10 @@ nav a {
     font-size: clamp(0.8rem, 1.3vw, 1.375rem);
 
 }
- nav a:hover {
-text-decoration: underline var(--paleStone) 3px;
-text-underline-offset: 0.5rem;
+
+nav a:hover {
+    text-decoration: underline var(--paleStone) 3px;
+    text-underline-offset: 0.5rem;
 
 }
 
@@ -156,22 +162,27 @@ nav i {
 #menu__toggle {
     opacity: 0;
 
-  }
-  #menu__toggle:checked + .menu__btn > span {
+}
+
+#menu__toggle:checked+.menu__btn>span {
     transform: rotate(45deg);
-  }
-  #menu__toggle:checked + .menu__btn > span::before {
+}
+
+#menu__toggle:checked+.menu__btn>span::before {
     top: 0;
     transform: rotate(0deg);
-  }
-  #menu__toggle:checked + .menu__btn > span::after {
+}
+
+#menu__toggle:checked+.menu__btn>span::after {
     top: 0;
     transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
+}
+
+#menu__toggle:checked~.menu__box {
     right: 0 !important;
-  }
-  .menu__btn {
+}
+
+.menu__btn {
     position: fixed;
     top: 40px;
     right: 25px;
@@ -179,10 +190,11 @@ nav i {
     cursor: pointer;
     z-index: 1;
 
-  }
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
     display: block;
     position: absolute;
     width: 100%;
@@ -190,16 +202,19 @@ nav i {
     background-color: #000000;
     transition-duration: .25s;
     border-radius: 10px;
-  }
-  .menu__btn > span::before {
+}
+
+.menu__btn>span::before {
     content: '';
     top: -12px;
-  }
-  .menu__btn > span::after {
+}
+
+.menu__btn>span::after {
     content: '';
     top: 12px;
-  }
-  .menu__box {
+}
+
+.menu__box {
     display: block;
     position: fixed;
     top: 0;
@@ -212,8 +227,9 @@ nav i {
     background-color: #ECEFF1;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
-  }
-  .menu__item {
+}
+
+.menu__item {
     display: block;
     padding: 16px 24px;
     color: #333;
@@ -223,10 +239,11 @@ nav i {
     text-decoration: none;
     transition-duration: .25s;
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
-  }
-  .menu__item:hover {
+}
+
+.menu__item:hover {
     background-color: var(--freshMint);
-  }
+}
 
 
 
@@ -242,6 +259,383 @@ nav i {
 
 
 
+
+
+/* _________________________________________________________________________________________________________________________________________ */
+/* FORSIDE */
+
+
+/* Hero */
+
+main img {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+
+}
+
+
+
+/* Title / introtekst */
+
+.intro h1 {
+    padding: var(--desktopMediumSpacer);
+    text-align: center;
+    font-size: 3.75rem;
+}
+
+.intro p {
+    padding-inline: 20%;
+    font-size: 1.875rem;
+    padding-bottom: var(--desktopMediumSpacer);
+}
+
+
+
+
+
+/* BIG CARD */
+
+.bigCardSection {
+    padding-inline: var(--dekstopLargeSpacer);
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--dekstopLargeSpacer);
+    margin-bottom: 30px;
+}
+
+.bigCard {
+    background-color: #F5F1E4;
+    height: 700px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.bigCard h2 {
+    font-size: clamp(2rem, 2.3vw, 2.5rem);
+    text-align: center;
+    padding-inline: 3.5rem;
+}
+
+.bigCard P {
+    padding: var(--desktopSMSpacer) var(--desktopSMSpacer);
+    font-size: clamp(1.125rem, 1.8vw, 2rem);
+
+}
+
+.bigCard a {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    padding-block: var(--desktopSmallSpacer);
+    background-color: var(--freshMint);
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: black;
+    font-weight: var(--fw-medium);
+}
+
+.bigCard a:hover {
+    transition: ease 0.5s;
+    transform: scale(1.05);
+}
+
+
+
+
+
+/* Kommende events */
+
+.futureEvents {
+    padding: var(--desktopSmallSpacer);
+    margin-bottom: 50px;
+}
+
+.futureEvents h2 {
+    text-align: center;
+    padding-bottom: var(--desktopSMSpacer);
+    font-size: 2.25rem;
+}
+
+
+
+/* Small cards */
+
+.smallCardWrapper {
+
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--dekstopLargeSpacer);
+}
+
+.smallCard {
+    width: 20%;
+    height: 450px;
+    background-color: var(--paleStone);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+
+
+}
+
+.smallCard img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 20px 20px 0 0;
+}
+
+section .smallCard h3 {
+    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+    font-weight: var(--fw-semibold);
+    text-align: center;
+    padding-inline: 0.5rem;
+
+}
+
+.smallCard p {
+    font-size: clamp(1rem, 1.5vw, 1.375rem);
+    font-weight: var(--fw-medium);
+    text-align: center;
+    padding-inline: 0.5rem;
+
+}
+
+.smallCard a {
+    display: block;
+    text-align: center;
+    padding-block: 1rem;
+    width: 60%;
+    margin: 0 auto;
+    background-color: var(--freshMint);
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: var(--fw-medium);
+    font-size: clamp(0.8rem, 1.3vw, 1.125rem);
+}
+
+.smallCard a:hover {
+    transition: ease 0.5s;
+    transform: scale(1.05);
+}
+
+
+
+/* FORSIDE SLUT
+_____________________________________________________________________________________________________________________________________________________ */
+
+
+
+
+
+
+/* ______________________________________________________________________________________________________________________ */
+/* OM KLUBBEN */
+
+
+
+.omkMain {
+    padding-inline: var(--desktopSmallSpacer);
+}
+
+.omkMain h2 {
+    padding-bottom: var(--desktopSmallSpacer);
+}
+
+.omkIntro {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: var(--desktopSmallSpacer);
+    padding-inline: var(--desktopSmallSpacer);
+}
+
+.omkIntro img {
+    height: 75%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.omkIntro p {
+    font-size: clamp(0.7rem, 1.40vw, 2rem);
+}
+
+
+
+.kontaktpersoner {
+    margin-bottom: 7.5rem;
+}
+
+
+.employeeCardWrapper {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 7.5rem;
+
+}
+
+.employeeCard {
+    width: 20%;
+    display: grid;
+    gap: 1rem;
+}
+
+.employeeCard img {
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.employeeCard h3 {
+    font-size: 1.25rem;
+}
+
+.employeeCard p {
+    font-size: 1.25rem;
+}
+
+.employeeCard i {
+    font-size: 1.4rem;
+}
+
+.employeeCard a {
+    color: black;
+    font-size: 1rem;
+}
+
+.employeeCard img {
+    border-radius: 20px;
+    object-fit: center;
+
+}
+
+.phone i {
+    color: var(--freshMint);
+    padding-right: 0.5rem;
+
+}
+
+.mail i {
+    color: var(--clearSky);
+    padding-right: 0.5rem;
+}
+
+
+.bestyrelsesmedlemmer {
+    margin-bottom: 7.5rem;
+}
+
+
+/* Om klubben slut */
+/* __________________________________________________________________________________________________________________________________ */¨
+
+
+
+
+
+
+/* ____________________________________________________________________________________________________________________________________________ */
+/* Børn og unge */
+
+
+/* Børn og unge slut */
+/* ____________________________________________________________________________________________________________________________________________________ */
+
+
+
+
+
+
+/* ______________________________________________________________________________________________________________________________ */
+/* Events */
+
+/* Events slut */
+/* _______________________________________________________________________________________________________________________________ */
+
+
+
+
+/* _________________________________________________________________________________________________________________________________ */
+/* Godt at vide */
+
+/* Godt at vide slut */
+/* __________________________________________________________________________________________________________________________________ */
+
+
+
+
+
+/* _________________________________________________________________________________________________________________________________ */
+/* Hvad er o kort */
+
+/* hvad er o kort slut */
+/* __________________________________________________________________________________________________________________________________ */
+
+
+
+
+
+/* _________________________________________________________________________________________________________________________________ */
+/* Kort og kompas */
+
+/* Kort og kompas slut */
+/* __________________________________________________________________________________________________________________________________ */
+
+
+
+
+
+
+/* _________________________________________________________________________________________________________________________________ */
+/* medlemsskab */
+
+/* medlemsskab slut */
+/* __________________________________________________________________________________________________________________________________ */
+
+
+
+
+
+
+
+
+/* _________________________________________________________________________________________________________________________________ */
+/* om orienteringsløb */
+
+/* om orienteringsløb slut */
+/* __________________________________________________________________________________________________________________________________ */
+
+
+
+
+/* _________________________________________________________________________________________________________________________________ */
+/* rsokkerne  */
+
+/* rsokkerne slut */
+/* __________________________________________________________________________________________________________________________________ */
+
+
+
+
+
+
+/* _________________________________________________________________________________________________________________________________ */
+/* træninger */
+
+/* træninger slut */
+/* __________________________________________________________________________________________________________________________________ */
 
 
 
@@ -354,7 +748,7 @@ footer {
     nav a img {
         height: 60px;
     }
-    
+
     nav i {
         font-size: 2rem;
     }
@@ -408,7 +802,7 @@ footer {
 
     /* Footer */
 
-    .footerWrapper{
+    .footerWrapper {
         padding-inline: 10%;
     }
 
@@ -420,7 +814,7 @@ footer {
 
     /* NAV */
 
-    nav ul{
+    nav ul {
         display: none;
     }
 
@@ -431,8 +825,8 @@ footer {
     nav a:hover {
         text-decoration: none;
 
-        
-        }
+
+    }
 
 
 
@@ -454,7 +848,7 @@ footer {
 
     /* Big card */
 
-    .bigCard{
+    .bigCard {
         padding: var(--mobileLargeSpacer);
         gap: 1rem;
     }
@@ -487,8 +881,8 @@ footer {
         font-size: clamp(1rem, 4vw, 1.375rem);
         font-weight: var(--fw-medium);
         text-align: center;
-        padding-inline:0.5rem;
-    
+        padding-inline: 0.5rem;
+
     }
 
     .smallCard a {
@@ -536,19 +930,17 @@ footer {
 
 
     .footerPolitik a {
-    font-size: 0.8rem;
+        font-size: 0.8rem;
 
     }
 
 
 }
 
-@media screen and (min-width:900px){
-    
+@media screen and (min-width:900px) {
+
     nav .hamburger-menu {
         display: none;
     }
 
 }
-
-
