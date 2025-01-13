@@ -302,7 +302,7 @@ main img {
     justify-content: space-between;
     grid-template-columns: 1fr 1fr;
     gap: var(--dekstopLargeSpacer);
-    margin-bottom: 30px;
+    margin-bottom: var(--desktopMediumSpacer);
 }
 
 .bigCard {
@@ -352,7 +352,7 @@ main img {
 /* Kommende events */
 
 .futureEvents {
-    padding: var(--desktopSmallSpacer);
+    padding-block: var(--desktopSmallSpacer);
     margin-bottom: 50px;
 }
 
@@ -395,7 +395,7 @@ main img {
 }
 
 section .smallCard h3 {
-    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+    font-size: clamp(1.2rem, 1.3vw, 1.8rem);
     font-weight: var(--fw-semibold);
     text-align: center;
     padding-inline: 0.5rem;
@@ -403,7 +403,7 @@ section .smallCard h3 {
 }
 
 .smallCard p {
-    font-size: clamp(1rem, 1.5vw, 1.375rem);
+    font-size: clamp(1rem, 1.2vw, 1.375rem);
     font-weight: var(--fw-medium);
     text-align: center;
     padding-inline: 0.5rem;
@@ -445,18 +445,24 @@ ________________________________________________________________________________
 
 
 .omkMain {
-    padding-inline: var(--desktopSmallSpacer);
+    padding-inline: var(--dekstopLargeSpacer);
 }
 
 .omkMain h2 {
+    text-align: center;
+    font-size: 2rem;
     padding-bottom: var(--desktopSmallSpacer);
+}
+
+.omkMain h3 {
+    padding-bottom: var(--desktopSmallSpacer);
+    font-size: 1.625rem;
 }
 
 .omkIntro {
     display: grid;
     grid-template-columns: 50% 1fr;
     gap: var(--desktopSmallSpacer);
-    padding-inline: var(--desktopSmallSpacer);
 }
 
 .omkIntro img {
@@ -467,7 +473,7 @@ ________________________________________________________________________________
 }
 
 .omkIntro p {
-    font-size: clamp(0.7rem, 1.40vw, 2rem);
+    font-size: clamp(0.7rem, 1.3vw, 2rem);
 }
 
 
@@ -486,13 +492,13 @@ ________________________________________________________________________________
 }
 
 .employeeCard {
-    width: 20%;
+    width: 300px;
     display: grid;
     gap: 1rem;
 }
 
 .employeeCard img {
-    width: 80%;
+    width: 300px;
     height: 200px;
     object-fit: cover;
     object-position: center;
@@ -500,6 +506,7 @@ ________________________________________________________________________________
 
 .employeeCard h3 {
     font-size: 1.25rem;
+    padding: 0;
 }
 
 .employeeCard p {
@@ -537,6 +544,37 @@ ________________________________________________________________________________
     margin-bottom: 7.5rem;
 }
 
+
+
+/* Tabel */
+
+
+td:nth-child(odd) {
+    padding-right: 3rem;
+}
+
+td {
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 50%;
+}
+
+td:nth-child(even) {
+    font-weight: bold;
+}
+
+table {
+    width: 80%;
+    margin:  0 auto var(--desktopMediumSpacer) auto;
+    border-collapse: collapse;
+        margin-bottom: ;
+}
+
+table a {
+    color: black;
+
+}
 
 /* Om klubben slut */
 /* __________________________________________________________________________________________________________________________________ */¨
@@ -664,7 +702,9 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    padding-inline: 20%;
+    padding: 10px 20%;
+    background-color: var(--fernLeaf);
+
 }
 
 .socialMedia {
@@ -691,13 +731,13 @@ footer {
 }
 
 .footerLogo img {
-    height: 60px;
+    height: 50px;
     display: block;
     border-radius: 0;
 }
 
 .footerLogo p {
-    font-size: 0.6875rem;
+    font-size: 0.6rem;
     padding: 0;
     font-weight: var(--fw-semibold);
 }
@@ -767,8 +807,12 @@ footer {
 
     /* BIG CARD */
 
+    .bigCardSection {
+        padding-inline: var(--desktopSmallSpacer);
+    }
+
     .bigCard {
-        height: 300px;
+        height: 330px;
         padding: var(--desktopSMSpacer);
     }
 
@@ -793,6 +837,10 @@ footer {
 
     /* Small cards */
 
+    .smallCardWrapper {
+        padding-inline: var(--mobileSmallSpacer);
+    }
+
     .smallCard {
         width: 25%;
     }
@@ -804,6 +852,24 @@ footer {
 
     .footerWrapper {
         padding-inline: 10%;
+    }
+
+
+
+
+    /* Om orienteringsklub intro */
+
+    .omkMain {
+        padding: var(--desktopSmallSpacer);
+    }
+
+    .employeeCard {
+        width: 220px;
+    }
+
+    .employeeCard img {
+        width: 220px;
+        height: 150px;
     }
 
 
