@@ -561,15 +561,16 @@ ________________________________________________________________________________
 /* ______________________________________________________________________________________________________________________________ */
 /* Events */
 
+
  .eventsArticle{
     display: flex; 
-    background-color: red;
+   background-color: var(--paleStone);
      margin-bottom: 1rem; 
 } 
 
-/* ALT DER STÅR I ARTICLE BURDE STÅ I .EVENTSARTICLE - BUT SHIT DOESN'T WANNA WORK */
+/* ALT DER STÅR I ARTICLE BURDE STÅ I .eventsArticle - BUT SHIT DOESN'T WANNA WORK */
 article {
-    background-color: red;
+   background-color: var(--paleStone);
     display: flex; 
     width: 80%;
     height: 500px;
@@ -579,11 +580,11 @@ article {
 .eventsArticle img {
     height: 300px;
     width: 400px;
+    padding-right: 3rem;
    
 }
 
-
-/* _____________skrevet af mig selv i codepen, skal se om det virker i vsc_______________ */
+/* MÅSKE SKAL DIV CLASSEN (eventText) I HTML FJERNES. kOMMER AN PÅ BRUGEN AF DEN */
 .eventsArticle span p {
     font-weight: bold;
   }
@@ -599,8 +600,8 @@ article {
   
   .eventsArticle table {
     padding-top: 2rem;
-  }
-  
+  } 
+  /* ^^BRUG DIV (eventsText) TIL AT FORMATTERE/STYLE HER I STEDER????? */
 
 
 
