@@ -562,26 +562,24 @@ ________________________________________________________________________________
 /* Events */
 
 
- .eventsArticle{
-    display: flex; 
-   background-color: var(--paleStone);
-     margin-bottom: 1rem; 
-} 
+
 
 /* ALT DER STÅR I ARTICLE BURDE STÅ I .eventsArticle - BUT SHIT DOESN'T WANNA WORK */
-article {
-   background-color: var(--paleStone);
-    display: flex; 
-    width: 80%;
-    height: 500px;
-    margin-bottom: 1rem;
- }
 
-.eventsArticle img {
+.eventsArticle {
+    display: flex;
     height: 300px;
-    width: 400px;
-    padding-right: 3rem;
-   
+}
+
+article {
+    display: flex;
+    height: 300px;
+}
+
+article img {
+    height: 100%;
+    width: 500px;
+    object-fit: cover;
 }
 
 /* MÅSKE SKAL DIV CLASSEN (eventText) I HTML FJERNES. kOMMER AN PÅ BRUGEN AF DEN */
