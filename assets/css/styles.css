@@ -502,6 +502,7 @@ ________________________________________________________________________________
 
 /* _________________________________________________________________________________________________________________________________ */
 /* Godt at vide */
+
 .wideCards {
   display: flex;
   flex-direction: column;
@@ -976,4 +977,20 @@ footer {
   nav .hamburger-menu {
     display: none;
   }
+}
+
+@media screen and (max-width: 900px){
+    .wideCard{
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 410px){
+    .wideCards{
+        font-size: 1rem;
+    }
+
+    .wideCardTitle{
+        font-size: 1.3rem;
+    }
 }
