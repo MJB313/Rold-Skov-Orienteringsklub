@@ -590,23 +590,7 @@ ________________________________________________________________________________
 /* _________________________________________________________________________________________________________________________________ */
 /* Kort og kompas */
 
-.kOKMain{
-    display: flex;
-}
 
-.kOKBody{
-    max-width: 50%;
-    padding-right: var(--dekstopLargeSpacer);
-}
-
-.kOKImg{
-    max-width: 50%;
-    object-fit: cover;
-    object-position: center center;
-    border-radius: 20px;
-    margin-top: var(--desktopSmallSpacer);
-    margin-left: var(--dekstopLargeSpacer);
-}
 
 
 
@@ -614,7 +598,20 @@ ________________________________________________________________________________
 /* Kort og kompas slut */
 /* __________________________________________________________________________________________________________________________________ */
 
+.kOKGridSystem{
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
 
+.kOKGridSystem div{
+    width: 50%;
+}
+
+.kOKGridSystem :nth-last-child(1){
+    display: grid;
+}
 
 
 
