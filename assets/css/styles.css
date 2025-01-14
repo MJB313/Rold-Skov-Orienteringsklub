@@ -951,3 +951,48 @@ footer {
     display: none;
   }
 }
+
+@media screen and (max-width: 1279px){
+
+    .konArt h2{
+        font-size: 2rem;
+    }
+
+    .konArt table{
+        max-width: 90%;
+        font-size: 1.2rem;
+    }
+
+    .konArt p{
+        max-width: 90%;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    .konArt h2{
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .konArt table{
+        max-width: 90%;
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .konArt p{
+        max-width: 100%;
+        margin-inline: var(--mobileLargeSpacer);
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    
+    .konArt p:nth-last-of-type(1){
+        padding-bottom: var(--mobileLargeSpacer);
+    }
+    
+}
