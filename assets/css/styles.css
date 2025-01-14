@@ -449,14 +449,18 @@ ________________________________________________________________________________
 }
 
 .omkMain h2 {
-    text-align: center;
     font-size: 2rem;
-    padding-bottom: var(--desktopSmallSpacer);
+    padding-bottom: var(--desktopSMSpacer);
+    text-align: center;
 }
 
 .omkMain h3 {
     padding-bottom: var(--desktopSmallSpacer);
     font-size: 1.625rem;
+}
+
+.omkMain h4 {
+    font-size: 1.3rem;
 }
 
 .omkIntro {
@@ -473,7 +477,16 @@ ________________________________________________________________________________
 }
 
 .omkIntro p {
-    font-size: clamp(0.7rem, 1.3vw, 2rem);
+    font-size: clamp(0.85rem, 1.2vw, 2rem);
+    padding-right: 1rem;
+}
+
+.introText h4 {
+font-size: clamp(1rem, 1.2vw, 2rem);
+}
+
+#omkIntroH4{
+    padding-top: var(--mobileSmallSpacer);
 }
 
 
@@ -491,10 +504,19 @@ ________________________________________________________________________________
 
 }
 
+.mobileDisplay {
+    display: grid;
+    justify-content: space-between;
+}
+
 .employeeCard {
     width: 300px;
     display: grid;
-    gap: 1rem;
+    gap: 0.5rem;
+}
+
+.employeeName {
+    padding-bottom: 1rem;
 }
 
 .employeeCard img {
@@ -528,6 +550,10 @@ ________________________________________________________________________________
 
 }
 
+.phone {
+    padding-bottom: 1rem;
+}
+
 .phone i {
     color: var(--freshMint);
     padding-right: 0.5rem;
@@ -543,6 +569,8 @@ ________________________________________________________________________________
 .bestyrelsesmedlemmer {
     margin-bottom: 7.5rem;
 }
+
+
 
 
 
@@ -568,7 +596,6 @@ table {
     width: 80%;
     margin:  0 auto var(--desktopMediumSpacer) auto;
     border-collapse: collapse;
-        margin-bottom: ;
 }
 
 table a {
@@ -797,9 +824,8 @@ footer {
 
     /* Intro sektion */
 
-    .intro p {
-        padding: var(--mobileSmallSpacer);
-        font-size: 1rem;
+    .omkIntro p {
+        font-size: clamp(0.5rem, 1.4vw,1.5rem);
     }
 
 
@@ -860,7 +886,7 @@ footer {
     /* Om orienteringsklub intro */
 
     .omkMain {
-        padding: var(--desktopSmallSpacer);
+        padding-inline: var(--desktopSmallSpacer);
     }
 
     .employeeCard {
@@ -870,6 +896,10 @@ footer {
     .employeeCard img {
         width: 220px;
         height: 150px;
+    }
+
+    .omkMain h1 {
+        padding-block: var(--mobileLargeSpacer);
     }
 
 
@@ -900,13 +930,19 @@ footer {
 
     /* Intro text */
 
-    .intro h1 {
-        font-size: 2rem;
+    .omkMain h1 {
+        font-size: clamp(1.5rem, 5vw, 2.5rem);
         padding-block: var(--mobileLargeSpacer);
     }
 
-    .intro p {
+    .omkIntro p {
         padding-block: 0 var(--mobileLargeSpacer);
+        font-size: clamp(1rem, 2vw, 1.2rem);
+
+    }
+
+    .introText h4 {
+        padding-left: var(--mobileLargeSpacer);
     }
 
 
@@ -957,6 +993,133 @@ footer {
 
 
 
+
+
+
+    /* Om klubben
+    ______________________________________________________________ */
+
+    .omkMain {
+        padding: 0;
+    }
+
+    .omkIntro {
+        display: block;
+    }
+
+    .omkMain h1 {
+        padding-block: var(--mobileLargeSpacer);
+    }
+
+    .omkMain h2 {
+        padding-block: var(--mobileLargeSpacer);
+    }
+
+    .omkMain img {
+        border-radius: 0;
+        padding-bottom: var(--mobileLargeSpacer);
+    }
+
+    .omkMain p{
+        padding-inline: var(--mobileLargeSpacer);
+    }
+
+    .employeeCardWrapper {
+        display: block;
+        padding-left:var(--mobileLargeSpacer) ;
+        margin: 0;
+    }
+
+    .kontaktpersoner {
+        margin-bottom: var(--mobileLargeSpacer);
+    }
+
+    .bestyrelsesmedlemmer {
+        margin-bottom: var(--mobileLargeSpacer);
+    }
+
+    .employeeCard {
+        width: 100%;
+        display: flex;
+        padding: 0 0 var(--mobileLargeSpacer) 0;
+    }
+
+    .employeeCard img {
+        width: 30%;
+        height: 150px;
+        padding: 0;
+        margin-right: var(--mobileSmallSpacer);
+        border-radius: 20px;
+    }
+
+    .omkMain h3 {
+        padding-inline: var(--mobileLargeSpacer);
+    }
+
+    .employeeName h4 {
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+    }
+
+    .employeeName p{
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+    }
+
+    .mobileDisplay i {
+        font-size: 1.2rem;
+    }
+
+    .mobileDisplay a {
+        font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+    }
+
+    .employeeName {
+        padding: 0;
+    }
+
+  
+
+    .employeeName p {
+        padding: 0;
+    }
+    
+
+    .phone {
+        display: inline-block;
+        padding: 0;
+    }
+    
+
+
+
+    /* Tabel */
+
+    tr {
+        display: grid;
+        border-bottom: 1.5px solid black;
+
+    }
+
+    td {
+        width: 100%;
+        border:none;
+        font-size: clamp(1.2rem, 4vw, 2rem);
+    }
+
+    td:nth-of-type(even){
+        padding-top:0;
+    }
+
+    td:nth-of-type(odd) {
+        padding-bottom: 0.5;
+    }
+
+
+
+    .omkMain h2 {
+            font-size: clamp(1.2rem, 4.5vw, 2rem);
+            padding-bottom: var(--desktopSMSpacer);
+            text-align: center;
+    }
 
 
 
