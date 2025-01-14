@@ -17,8 +17,8 @@
 
   /* Spacere */
 
-  --mobileSmallSpacer: 1.25rem;
   --mobileSmallSpacer: 0.9375rem;
+  --mobileMediumSpacer: 1.25rem;
   --mobileLargeSpacer: 1.875rem;
 
   --desktopSmallSpacer: 1.25rem;
