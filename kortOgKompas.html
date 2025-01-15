@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kort og Kompas</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,8 +12,126 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img
+            src="./assets/images/RoldSkovOK Logo.png"
+            alt="Logo af Rold Skov orienteringsklub"
+          />
+        </a>
+
+        <!-- Taget fra denne Codepen: https://codepen.io/alvarotrigo/pen/yLzaPVJ  og justeret til vores layout-->
+
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul class="menu__box">
+            <li><a class="menu__item" href="events.html">Events</a></li>
+            <li><a class="menu__item" href="omKlubben.html">Om klubben</a></li>
+            <li>
+              <a class="menu__item" href="godtAtVide.html">Godt at vide</a>
+            </li>
+            <li><a class="menu__item" href="træninger.html">Træninger</a></li>
+            <li>
+              <a class="menu__item" href="omOrienteringsklubben.html"
+                >Om orienteringsklubben</a
+              >
+            </li>
+            <li>
+              <a class="menu__item" href="medlemsskab.html">Medlemsskab</a>
+            </li>
+            <li><a class="menu__item" href="#">Log in</a></li>
+          </ul>
+        </div>
+        <!-- Codepen ____________________________________________________________________ -->
+
+        <ul class="desktopNavHover">
+          <li><a href="omKlubben.html">Om klubben</a></li>
+          <li><a href="godtAtVide.html">Godt at vide</a></li>
+          <li><a href="træninger.html">Træninger</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li>
+            <a href="omOrienteringsklubben.html">Om orienteringsklubben</a>
+          </li>
+          <li><a href="medlemsskab.html">Medlemsskab</a></li>
+        </ul>
+
+        <div class="login">
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="#">Log in</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="image-container">
+        <img
+          src="./assets/images/RSOK find vej instruktion.jpg"
+          alt="Orienteringsløb billede"
+        />
+      </div>
+      <div class="content">
+        <h2>Du får hjælp, til både kort og kompas!</h2>
+        <p>
+          I forbindelse med klubbens træningsløb lørdage kl. 13.00 er rutinerede
+          medlemmer af klubben klar til at hjælpe dig i det omfang du føler
+          behov, dels ved at forklare om kortsignaturer etc., dels ved at følge
+          dig i skoven, ind til du føler dig tryg nok til selv at tage
+          udfordringen op. Det kan virke svært, men vi sørger for en dybdegående
+          introduktion til hvordan man bruger o-kort og kompas. Det er ikke så
+          svært, når man først får det lært!
+        </p>
+        <p>
+          Orienteringsløb er opdelt i sværhedsgrader og længder, afpasset efter
+          hvor øvet man er, ens køn og alder. Man kan altså vælge sit "niveau"
+          og gradvis skærpe kravene til sig selv. Derfor har vi et
+          sværhedsgradssystem som er angivet via. disse ikoner :
+        </p>
+
+        <div class="mapIcons">
+          <img src="./assets/icons/map-solid.svg" alt="" />
+          <img src="./assets/icons/map-solid.svg" alt="" />
+          <img src="./assets/icons/map-solid.svg" alt="" />
+          <img src="./assets/icons/map-regular.svg" alt="" />
+          <img src="./assets/icons/map-regular.svg" alt="" />
+        </div>
+        <p>1-5/5 - hvor 1/5 er det nemmeste og 5/5 er det sværeste.</p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerWrapper">
+        <div class="socialMedia">
+          <a href="https://www.facebook.com/RoldSkovOK" target="_blank">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/roldskovorienteringsklub/?hl=da"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+        </div>
+
+        <div class="footerLogo">
+          <img
+            src="./assets/images/RoldSkovOK Logo.png"
+            alt="Logo af Rold Skov orienteringsklub"
+          />
+          <p>Copyright © 1942 - 2025 RoldSkovOK®</p>
+        </div>
+
+        <div class="footerPolitik">
+          <a href="#">Cookie politik</a>
+          <a href="#">Privatlivs politik</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
