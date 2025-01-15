@@ -249,31 +249,6 @@ nav i {
 }
 
 
-.mapIcons {
-  display: flex;
-  margin-bottom: var(--desktopSmallSpacer);
-}
-
-.mapIcons img {
-  width: 3rem;
-  height: 2rem;
-  align-items: left;
-}
-
-.content {
-  flex: 1 1 55%;
-  text-align: left center;
-}
-
-.content h2 {
-  font-size: 1.2rem;
-  margin-bottom: var(--desktopSmallSpacer);
-}
-
-.content p {
-  line-height: 1.5;
-  margin-bottom: var(--desktopSmallSpacer);
-}
 
 /* Børn og unge slut */
 /* ____________________________________________________________________________________________________________________________________________________ */
@@ -1057,11 +1032,13 @@ footer {
 
 
   .gav4Sider {
-    margin-block: var(--mobileLargeSpacer);
+    margin-top: var(--mobileLargeSpacer);
+
+
   }
 
   .gav4Sider img {
-    height: 300px;
+    height: 400px;
   }
 
 
@@ -1075,50 +1052,4 @@ footer {
   }
 }
 
-@media (max-width: 400px) {
-  .container {
-    flex-direction: column;
-    max-width: 100%;
-    margin-inline: 1rem;
-    gap: 1rem;
-    padding: 0.75rem;
-  }
 
-  .image-container {
-    flex: 1 1 100%;
-    text-align: center;
-  }
-
-  .image-container img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .content {
-    flex: 1 1 100%;
-    text-align: left;
-  }
-
-  .mapIcons {
-    display: flex;
-    margin-bottom: var(--desktopSmallSpacer);
-  }
-
-  .mapIcons img {
-    width: 3rem;
-    height: 2rem;
-    align-items: left;
-  }
-
-  .content h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .content p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 0.75rem;
-  }
-}
