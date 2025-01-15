@@ -504,49 +504,51 @@ ________________________________________________________________________________
 /* Godt at vide */
 
 .wideCards {
-  display: flex;
-  flex-direction: column;
-  gap: var(--desktopSmallSpacer);
+  width: 100%;
   align-items: center;
+  padding: var(--dekstopLargeSpacer);
 }
 .wideCard {
-  width: 82rem;
+  width: 90%;
+  margin: 0 auto var(--desktopMediumSpacer) auto;
   height: 24.75rem;
   background-color: #f5f1e4;
   border-radius: 0.625rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  margin: 2rem;
+
+}
+
+.wideCard img{
+  border-radius: 20px 20px 0 0;
+
 }
 .wideCardImg1 {
   width: 100%;
-  height: 60%;
+  height: 50%;
   object-fit: cover;
   object-position: 100% 80%;
 }
 .wideCardImg2 {
   width: 100%;
-  height: 60%;
+  height: 50%;
   object-fit: cover;
   object-position: 100% 30%;
 }
 .wideCardImg3 {
   width: 100%;
-  height: 60%;
+  height: 50%;
   object-fit: cover;
   object-position: 100% 40%;
 }
 .wideCardImg4 {
   width: 100%;
-  height: 60%;
+  height: 50%;
   object-fit: cover;
   object-position: 100% 30%;
 }
 .wideCardImg5 {
   width: 100%;
-  height: 60%;
+  height: 50%;
   object-fit: cover;
   object-position: 100% 30%;
 }
@@ -558,23 +560,26 @@ ________________________________________________________________________________
 }
 
 .wideCardTitle {
-  font-size: 2rem;
+  font-size: clamp(1.3rem,2vw,2rem);
   color: #000000;
-  margin-bottom: 1rem;
+  padding: 1.5rem;
 }
 
-.wideCardButton {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background-color: #82b56d;
-  color: #000000;
+.wideCard a {
+  width: 50%;
+  margin: 0 auto;
+  padding-block: 1rem;
+  display: block;
+  color: black;
   text-decoration: none;
-  border-radius: 1rem;
-  text-align: center;
-  transition: transform 0.3s ease;
+  background-color: var(--freshMint);
+  border-radius: 20px;
+  font-size: clamp(0.8rem,1.2vw,1.2rem);
+  font-weight: var(--fw-medium);
 }
 
-.wideCardButton:hover {
+.wideCard a:hover {
+  transition: ease 0.3s;
   transform: scale(1.05);
 }
 
@@ -873,6 +878,9 @@ footer {
   }
 }
 
+
+
+
 @media screen and (max-width: 900px) {
   /* NAV */
 
@@ -938,6 +946,24 @@ footer {
     font-size: clamp(1rem, 3vw, 1.2rem);
   }
 
+
+
+.wideCardContent a{
+  width: 75%;
+}
+
+/* Godt at vide */
+
+
+.gavH1 {
+  font-size: 2.2rem;
+  padding-block: var(--mobileLargeSpacer);
+}
+
+
+
+
+
   /* Footer */
 
   footer {
@@ -979,24 +1005,8 @@ footer {
   }
 }
 
-@media screen and (max-width: 900px){
-    .wideCard{
-        max-width: 90%;
-    }
-}
 
-@media screen and (max-width: 410px){
-    .wideCards{
-        font-size: 1rem;
-    }
 
-    .wideCardTitle{
-        font-size: 1.3rem;
-    }
-}
 
-@media screen and (max-width: 1279px){
-    .wideCard{
-        max-width: 90%;
-    }
-}
+
+
