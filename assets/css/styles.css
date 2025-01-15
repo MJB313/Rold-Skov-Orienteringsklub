@@ -230,6 +230,53 @@ nav i {
 /* ____________________________________________________________________________________________________________________________________________________________________ */
 /* Her styles MAIN */
 
+
+/* ____________________________________________________________________________________________________________________________________________ */
+/* Børn og unge */
+
+.bouSection {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  gap: var(--desktopSmallSpacer);
+  padding-inline: var(--desktopSmallSpacer);
+  margin-block: var(--dekstopLargeSpacer);
+}
+
+.bouSection img {
+  width: 100%;
+}
+
+
+.mapIcons {
+  display: flex;
+  margin-bottom: var(--desktopSmallSpacer);
+}
+
+.mapIcons img {
+  width: 3rem;
+  height: 2rem;
+  align-items: left;
+}
+
+.content {
+  flex: 1 1 55%;
+  text-align: left center;
+}
+
+.content h2 {
+  font-size: 1.2rem;
+  margin-bottom: var(--desktopSmallSpacer);
+}
+
+.content p {
+  line-height: 1.5;
+  margin-bottom: var(--desktopSmallSpacer);
+}
+
+/* Børn og unge slut */
+/* ____________________________________________________________________________________________________________________________________________________ */
+
+
 /* _________________________________________________________________________________________________________________________________________ */
 /* FORSIDE */
 
@@ -472,72 +519,10 @@ ________________________________________________________________________________
 
 /* Om klubben slut */
 /* __________________________________________________________________________________________________________________________________ */
-¨
 
 
 
 
-
-
-/* ____________________________________________________________________________________________________________________________________________ */
-/* Børn og unge */
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 50rem;
-  margin-block: var(--desktopSmallSpacer);
-  padding: 1.25rem;
-  gap: var(--desktopSmallSpacer);
-}
-
-.container {
-  display: flex;
-  max-width: 100%;
-  margin-inline: 6rem;
-}
-
-.image-container {
-  flex: 1 1 40%;
-  text-align: center;
-}
-
-.image-container img {
-  max-width: 32rem;
-  width: auto;
-  height: 36rem;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-}
-
-.mapIcons {
-  display: flex;
-  margin-bottom: var(--desktopSmallSpacer);
-}
-
-.mapIcons img {
-  width: 3rem;
-  height: 2rem;
-  align-items: left;
-}
-
-.content {
-  flex: 1 1 55%;
-  text-align: left center;
-}
-
-.content h2 {
-  font-size: 1.2rem;
-  margin-bottom: var(--desktopSmallSpacer);
-}
-
-.content p {
-  line-height: 1.5;
-  margin-bottom: var(--desktopSmallSpacer);
-}
-
-/* Børn og unge slut */
-/* ____________________________________________________________________________________________________________________________________________________ */
 
 /* ______________________________________________________________________________________________________________________________ */
 /* Events */
@@ -948,59 +933,15 @@ footer {
     padding-inline: 10%;
   }
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 50rem;
-    margin-block: var(--desktopSmallSpacer);
-    padding: 1.25rem;
-    gap: var(--desktopSmallSpacer);
+
+  .bouSection{
+    grid-template-columns: 1fr;
+    margin-block: var(--desktopMediumSpacer);
   }
 
-  .container {
-    display: flex;
-    max-width: 100%;
-    margin-inline: 1.2rem;
-  }
 
-  .image-container {
-    flex: 1 1 40%;
-    text-align: center;
-  }
 
-  .image-container img {
-    max-width: 32rem;
-    width: auto;
-    height: 36rem;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-  }
 
-  .content {
-    flex: 1 1 55%;
-    text-align: left center;
-  }
-
-  .mapIcons {
-    display: flex;
-    margin-bottom: var(--desktopSmallSpacer);
-  }
-
-  .mapIcons img {
-    width: 3rem;
-    height: 2rem;
-    align-items: left;
-  }
-
-  .content h2 {
-    font-size: 1.2rem;
-    margin-bottom: var(--desktopSmallSpacer);
-  }
-
-  .content p {
-    line-height: 1.5;
-    margin-bottom: var(--desktopSmallSpacer);
-  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1102,46 +1043,24 @@ footer {
     font-size: 0.8rem;
   }
 
-  .container {
-    flex-direction: column;
-    max-width: 100%;
-    margin-inline: 1rem;
-    gap: 1rem;
-  }
 
-  .image-container {
-    flex: 1 1 100%;
-  }
 
-  .image-container img {
-    max-width: 100%;
-    height: auto;
-  }
 
-  .mapIcons {
-    display: flex;
-    margin-bottom: var(--desktopSmallSpacer);
-  }
+/* Børn og unge */
 
-  .mapIcons img {
-    width: 3rem;
-    height: 2rem;
-    align-items: left;
-  }
-
-  .content {
-    flex: 1 1 100%;
-    text-align: left center;
-  }
 
   .content h2 {
     font-size: 1.5rem;
   }
 
-  .content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+
+  .bouSection {
+    margin-block: var(--mobileLargeSpacer);
   }
+
+
+
+
 }
 
 @media screen and (min-width: 900px) {
