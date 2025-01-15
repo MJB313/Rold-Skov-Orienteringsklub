@@ -259,20 +259,65 @@ nav i {
 
 
 
+.eventHero {
+    width: 100%;
+    border-radius: 0;
+}
+
+.eventsArticle {
+    background-color: red;
+    display: flex;
+    margin-bottom: var(--dekstopLargeSpacer);
+}
+
+article img {
+    height: 300px;
+    width: 500px;
+    display: block;
+    object-fit: cover;
+    margin-right: var(--dekstopLargeSpacer);
+}
 
 
-/* _________________________________________________________________________________________________________________________________________ */
+.eventsArticle span p {
+    font-weight: bold;
+}
+
+.eventsArticle td {
+    padding-bottom: 1rem;
+}
+
+td:nth-child(odd) {
+    font-weight: bold;
+    padding-right: 2rem;
+}
+
+.eventsArticle table {
+    padding-top: 2rem;
+}
+/* _____________________________________________________________ */
 /* FORSIDE */
+
+/* _____________________________________________________ */
+/* Events */
+
+
+
+
+
+
+/* Events slut*/
+/* ________________________________________________________________________*/
 
 
 /* Hero */
 
-main img {
+/* main img {
     display: block;
     width: 100%;
     border-radius: 0;
 
-}
+} */
 
 
 
@@ -438,8 +483,6 @@ ________________________________________________________________________________
 
 
 
-
-/* ______________________________________________________________________________________________________________________ */
 /* OM KLUBBEN */
 
 
@@ -539,7 +582,8 @@ ________________________________________________________________________________
 
 
 /* Om klubben slut */
-/* __________________________________________________________________________________________________________________________________ */¨
+/* __________________________________________________________________________ */
+
 
 
 
@@ -552,61 +596,6 @@ ________________________________________________________________________________
 
 /* Børn og unge slut */
 /* ____________________________________________________________________________________________________________________________________________________ */
-
-
-
-
-
-
-/* ______________________________________________________________________________________________________________________________ */
-/* Events */
-
-
-
-
-/* ALT DER STÅR I ARTICLE BURDE STÅ I .eventsArticle - BUT SHIT DOESN'T WANNA WORK */
-
-.eventsArticle {
-    display: flex;
-    height: 300px;
-}
-
-article {
-    display: flex;
-    height: 300px;
-}
-
-article img {
-    height: 100%;
-    width: 500px;
-    object-fit: cover;
-}
-
-/* MÅSKE SKAL DIV CLASSEN (eventText) I HTML FJERNES. kOMMER AN PÅ BRUGEN AF DEN */
-.eventsArticle span p {
-    font-weight: bold;
-  }
-  
-  .eventsArticle td {
-    padding-bottom: 1rem;
-  }
-  
-  td:nth-child(odd) {
-    font-weight: bold;
-    padding-right: 2rem;
-  }
-  
-  .eventsArticle table {
-    padding-top: 2rem;
-  } 
-  /* ^^BRUG DIV (eventsText) TIL AT FORMATTERE/STYLE HER I STEDER????? */
-
-
-
-
-/* Events slut */
-/* _______________________________________________________________________________________________________________________________ */
-
 
 
 
