@@ -234,7 +234,7 @@ nav i {
 /* ____________________________________________________________________________________________________________________________________________ */
 /* Børn og unge */
 
-.bouSection {
+.gav4Sider {
   display: grid;
   grid-template-columns: 45% 1fr;
   gap: var(--desktopSmallSpacer);
@@ -242,8 +242,10 @@ nav i {
   margin-block: var(--dekstopLargeSpacer);
 }
 
-.bouSection img {
+.gav4Sider img {
   width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
 
 
@@ -934,7 +936,7 @@ footer {
   }
 
 
-  .bouSection{
+  .gav4Sider{
     grid-template-columns: 1fr;
     margin-block: var(--desktopMediumSpacer);
   }
@@ -1054,8 +1056,12 @@ footer {
   }
 
 
-  .bouSection {
+  .gav4Sider {
     margin-block: var(--mobileLargeSpacer);
+  }
+
+  .gav4Sider img {
+    height: 300px;
   }
 
 
