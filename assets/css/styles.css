@@ -295,8 +295,7 @@ td:nth-child(odd) {
 .eventsArticle table {
     padding-top: 2rem;
 }
-/* _____________________________________________________________ */
-/* FORSIDE */
+
 
 /* _____________________________________________________ */
 /* Events */
@@ -310,14 +309,16 @@ td:nth-child(odd) {
 /* ________________________________________________________________________*/
 
 
+
+/* _____________________________________________________________ */
+/* FORSIDE */
+
 /* Hero */
 
-/* main img {
-    display: block;
+.hero {
     width: 100%;
     border-radius: 0;
-
-} */
+}
 
 
 
@@ -330,7 +331,7 @@ td:nth-child(odd) {
 }
 
 .intro p {
-    padding-inline: 20%;
+    padding-inline: var(--dekstopLargeSpacer);
     font-size: 1.875rem;
     padding-bottom: var(--desktopMediumSpacer);
 }
@@ -352,8 +353,8 @@ td:nth-child(odd) {
 
 .bigCard {
     background-color: #F5F1E4;
-    height: 700px;
-    padding: 3rem;
+    height: 600px;
+    padding: 3rem var(--desktopSMSpacer);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -361,13 +362,13 @@ td:nth-child(odd) {
 }
 
 .bigCard h2 {
-    font-size: clamp(2rem, 2.3vw, 2.5rem);
+    font-size: clamp(1.6rem, 2vw, 1.8rem);
     text-align: center;
-    padding-inline: 3.5rem;
+    padding-inline: 1rem;
 }
 
 .bigCard P {
-    padding: var(--desktopSMSpacer) var(--desktopSMSpacer);
+    padding-inline:  var(--desktopSMSpacer);
     font-size: clamp(1.125rem, 1.8vw, 2rem);
 
 }
@@ -379,7 +380,7 @@ td:nth-child(odd) {
     border-radius: 10px;
     padding-block: var(--desktopSmallSpacer);
     background-color: var(--freshMint);
-    font-size: 1.125rem;
+    font-size: clamp(0.8rem,1.1vw,1.5rem);
     text-decoration: none;
     color: black;
     font-weight: var(--fw-medium);
@@ -397,13 +398,13 @@ td:nth-child(odd) {
 /* Kommende events */
 
 .futureEvents {
-    padding: var(--desktopSmallSpacer);
+    padding-block: var(--desktopSmallSpacer);
     margin-bottom: 50px;
 }
 
 .futureEvents h2 {
     text-align: center;
-    padding-bottom: var(--desktopSMSpacer);
+    padding-block: var(--desktopSMSpacer);
     font-size: 2.25rem;
 }
 
@@ -419,7 +420,7 @@ td:nth-child(odd) {
 }
 
 .smallCard {
-    width: 20%;
+    width: 320px;
     height: 450px;
     background-color: var(--paleStone);
     border-radius: 20px;
@@ -440,18 +441,19 @@ td:nth-child(odd) {
 }
 
 section .smallCard h3 {
-    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+    font-size: clamp(1.1rem, 1.2vw, 1.6rem);
     font-weight: var(--fw-semibold);
     text-align: center;
     padding-inline: 0.5rem;
+    
 
 }
 
 .smallCard p {
-    font-size: clamp(1rem, 1.5vw, 1.375rem);
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
     font-weight: var(--fw-medium);
     text-align: center;
-    padding-inline: 0.5rem;
+    padding-inline: 1.5rem;
 
 }
 
@@ -493,6 +495,7 @@ ________________________________________________________________________________
 
 .omkMain h2 {
     padding-bottom: var(--desktopSmallSpacer);
+    padding-inline: var(--desktopSmallSpacer);
 }
 
 .omkIntro {
@@ -504,6 +507,7 @@ ________________________________________________________________________________
 
 .omkIntro img {
     height: 75%;
+    width: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 20px;
@@ -525,6 +529,7 @@ ________________________________________________________________________________
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 7.5rem;
+    padding-inline: var(--desktopSmallSpacer);
 
 }
 
@@ -535,7 +540,7 @@ ________________________________________________________________________________
 }
 
 .employeeCard img {
-    width: 80%;
+    width: 100%;
     height: 200px;
     object-fit: cover;
     object-position: center;
@@ -543,6 +548,7 @@ ________________________________________________________________________________
 
 .employeeCard h3 {
     font-size: 1.25rem;
+
 }
 
 .employeeCard p {
@@ -789,8 +795,13 @@ footer {
 
     /* Intro sektion */
 
+    .intro h1 {
+        font-size: 2.5rem;
+        padding-block: var(--mobileLargeSpacer);
+    }
+
     .intro p {
-        padding: var(--mobileSmallSpacer);
+        padding: 0 2rem var(--mobileLargeSpacer) 2rem;
         font-size: 1rem;
     }
 
@@ -799,24 +810,29 @@ footer {
 
     /* BIG CARD */
 
+    .bigCardSection {
+        padding-inline: var(--mobileLargeSpacer);
+    }
+
     .bigCard {
-        height: 300px;
+        height: 400px;
         padding: var(--desktopSMSpacer);
     }
 
     .bigCard h2 {
         padding: 0;
-        font-size: 1.125rem;
+        font-size: clamp(1rem,1.8vw,1.4rem);
     }
 
     .bigCard p {
         padding: 0;
-        font-size: 1rem;
+        font-size: clamp(1rem,1.5vw,1.5rem);
     }
 
     .bigCard a {
         padding-block: 0.8rem;
-        font-size: 0.7rem;
+        width: 60%;
+        font-size: clamp(0.7rem,1vw,1rem);
     }
 
 
@@ -825,8 +841,13 @@ footer {
 
     /* Small cards */
 
+    .smallCardWrapper {
+        padding-inline: var(--mobileLargeSpacer);
+    }
+
     .smallCard {
-        width: 25%;
+        width: 30%;
+
     }
 
 
@@ -888,6 +909,18 @@ footer {
     .bigCardSection {
         grid-template-columns: 1fr;
         padding-top: 0;
+    }
+
+    .bigCard h2 {
+        font-size: clamp(0.9rem,3vw,1.5rem);
+    }
+
+    .bigCard p {
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+    }
+
+    .bigCard a {
+        font-size: clamp(0.8rem,2.5vw,1.4rem);
     }
 
 
