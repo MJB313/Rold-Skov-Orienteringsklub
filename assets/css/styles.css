@@ -563,6 +563,29 @@ table a {
 /* ______________________________________________________________________________________________________________________________ */
 /* Events */
 
+.eventHero {
+  width: 100%;
+  border-radius: 0;
+}
+
+.eventsArticle {
+  background-color: red;
+  display: flex;
+  margin-bottom: var(--dekstopLargeSpacer);
+}
+
+article img {
+  height: 300px;
+  width: 500px;
+  display: block;
+  object-fit: cover;
+  margin-right: var(--dekstopLargeSpacer);
+}
+
+.eventsArticle span p {
+  font-weight: bold;
+}
+
 /* Events slut */
 /* _______________________________________________________________________________________________________________________________ */
 
@@ -907,35 +930,44 @@ footer {
     font-weight: var(--fw-semibold);
 }
 
-.footerPolitik {
-  display: grid;
-  place-items: center;
-  gap: var(--desktopSmallSpacer);
-}
 
-.footerPolitik a {
-  color: black;
-  font-size: 1.375rem;
-  font-weight: var(--fw-semibold);
-}
 
 /* _______________________________________________________________________________________________________________ */
 /* MEDIA QUERRIES */
 
+@media screen and (max-width: 1359px) {
+  .events {
+    padding: var(--desktopSmallSpacer);
+  }
+
+  .eventsArticle img {
+    margin-right: var(--desktopMediumSpacer);
+  }
+
+  .eventsArticle td {
+    padding-bottom: 1.2rem;
+  }
+}
+/* ____________________________________________________________________________________________________________________________________ */
+
+
+
+
+
+
+
 @media screen and (max-width: 1279px) {
+  /* ______________________________________________________________________________________________________________________________ */
+  /* FORSIDE */
+
+
   /* Nav */
 
   nav {
     height: 80px;
   }
 
-  nav a img {
-    height: 60px;
-  }
 
-  nav i {
-    font-size: 2rem;
-  }
 
   /* Intro sektion */
 
@@ -944,85 +976,62 @@ footer {
     font-size: 1rem;
   }
 
-  /* BIG CARD */
 
-  .bigCard {
-    height: 300px;
-    padding: var(--desktopSMSpacer);
-  }
 
-  .bigCard h2 {
-    padding: 0;
-    font-size: 1.125rem;
-  }
+ /* BIG CARD */
+    
+.bigCardSection {
+ padding-inline: var(--desktopSmallSpacer);
+ }
+    
+.bigCard {
+ height: 330px;
+ padding: var(--desktopSMSpacer);
+}
+    
+ .bigCard h2 {
+ padding: 0;
+ font-size: 1.125rem;
+ }
+    
+.bigCard p {
+ padding: 0;
+ font-size: 1rem;
+}
+    
+.bigCard a {
+ padding-block: 0.8rem;
+ font-size: 0.7rem;
+}
 
-    .omkIntro p {
-        font-size: clamp(0.5rem, 1.4vw,1.5rem);
-    }
 
-  .bigCard a {
-    padding-block: 0.8rem;
-    font-size: 0.7rem;
-  }
 
-  /* Small cards */
+/* Small cards */
+    
+.smallCardWrapper {
+ padding-inline: var(--mobileSmallSpacer);
+}
+    
+.smallCard {
+ width: 25%;
+}
 
-  .smallCard {
-    width: 25%;
-  }
 
-    /* BIG CARD */
 
-    .bigCardSection {
-        padding-inline: var(--desktopSmallSpacer);
-    }
+/* Footer */
 
-    .bigCard {
-        height: 330px;
-        padding: var(--desktopSMSpacer);
-    }
+.footerWrapper {
+ padding-inline: 10%;
+}
 
-    .bigCard h2 {
-        padding: 0;
-        font-size: 1.125rem;
-    }
-
-    .bigCard p {
-        padding: 0;
-        font-size: 1rem;
-    }
-
-    .bigCard a {
-        padding-block: 0.8rem;
-        font-size: 0.7rem;
-    }
+/* Forside SLUT
+____________________________________________________________________________________________________________ */
 
 
 
 
 
-    /* Small cards */
-
-    .smallCardWrapper {
-        padding-inline: var(--mobileSmallSpacer);
-    }
-
-    .smallCard {
-        width: 25%;
-    }
-
-
-
-
-    /* Footer */
-
-    .footerWrapper {
-        padding-inline: 10%;
-    }
-
-
-
-
+  /* ________________________________________________________________________________________________________ */
     /* Om orienteringsklub intro */
 
     .omkMain {
@@ -1042,13 +1051,18 @@ footer {
         padding-block: var(--mobileLargeSpacer);
     }
 
-
+/* Om orienteringskluv SLUT
+_________________________________________________________________________________________________________________ */
 }
 
 
 
 
 @media screen and (max-width: 900px) {
+
+  /* _____________________________________________________________________________________________________________ */
+  /* Forside */
+
   /* NAV */
 
   nav ul {
@@ -1063,123 +1077,109 @@ footer {
     text-decoration: none;
   }
 
-  /* Intro text */
-
-  .intro h1 {
-    font-size: 2rem;
-    padding-block: var(--mobileLargeSpacer);
-  }
-
-  .intro p {
-    padding-block: 0 var(--mobileLargeSpacer);
-  }
-
-  /* Big card */
-
-  .bigCard {
-    padding: var(--mobileLargeSpacer);
-    gap: 1rem;
-  }
-
-  .bigCardSection {
-    grid-template-columns: 1fr;
-    padding-top: 0;
-  }
-
-  /* Small card */
-
-  .smallCardWrapper {
-    flex-direction: column;
-    gap: var(--mobileLargeSpacer);
-  }
-
-  .smallCard {
-    width: 100%;
-    gap: 0;
-  }
-
-  section .smallCard h3 {
-    font-size: clamp(1.2rem, 4vw, 2rem);
-  }
-
-  .smallCard p {
-    font-size: clamp(1rem, 4vw, 1.375rem);
-    font-weight: var(--fw-medium);
-    text-align: center;
-    padding-inline: 0.5rem;
-  }
-
-  .smallCard a {
-    font-size: clamp(1rem, 3vw, 1.2rem);
-  }
-
-
 
 
 
     /* Intro text */
 
-    .omkMain h1 {
-        font-size: clamp(1.5rem, 5vw, 2.5rem);
-        padding-block: var(--mobileLargeSpacer);
-    }
+.omkMain h1 {
+ font-size: clamp(1.5rem, 5vw, 2.5rem);
+ padding-block: var(--mobileLargeSpacer);
+}
 
-    .omkIntro p {
-        padding-block: 0 var(--mobileLargeSpacer);
-        font-size: clamp(1rem, 2vw, 1.2rem);
+.omkIntro p {
+ padding-block: 0 var(--mobileLargeSpacer);
+ font-size: clamp(1rem, 2vw, 1.2rem);
+}
 
-    }
-
-    .introText h4 {
-        padding-left: var(--mobileLargeSpacer);
-    }
+.introText h4 {
+  padding-left: var(--mobileLargeSpacer);
+}
 
 
 
 
     /* Big card */
 
-    .bigCard {
-        padding: var(--mobileLargeSpacer);
-        gap: 1rem;
-    }
+.bigCard {
+ padding: var(--mobileLargeSpacer);
+ gap: 1rem;
+}
 
-    .bigCardSection {
-        grid-template-columns: 1fr;
-        padding-top: 0;
-    }
+.bigCardSection {
+ grid-template-columns: 1fr;
+ padding-top: 0;
+}
 
 
 
 
     /* Small card */
 
-    .smallCardWrapper {
-        flex-direction: column;
-        gap: var(--mobileLargeSpacer);
-    }
+.smallCardWrapper {
+ flex-direction: column;
+ gap: var(--mobileLargeSpacer);
+}
 
-    .smallCard {
-        width: 100%;
-        gap: 0;
-    }
+.smallCard {
+ width: 100%;
+ gap: 0;
+}
 
-    section .smallCard h3 {
-        font-size: clamp(1.2rem, 4vw, 2rem);
-    }
+section .smallCard h3 {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+ }
 
-    .smallCard p {
-        font-size: clamp(1rem, 4vw, 1.375rem);
-        font-weight: var(--fw-medium);
-        text-align: center;
-        padding-inline: 0.5rem;
+.smallCard p {
+ font-size: clamp(1rem, 4vw, 1.375rem);
+ font-weight: var(--fw-medium);
+ text-align: center;
+ padding-inline: 0.5rem;
 
-    }
+}
 
-    .smallCard a {
-        font-size: clamp(1rem, 3vw, 1.2rem);
-    }
+.smallCard a {
+ font-size: clamp(1rem, 3vw, 1.2rem);
+}
 
+
+    
+    /* Footer */
+      
+footer {
+ height: 80px;
+}
+      
+.footerWrapper {
+  padding-inline: 5%;
+}
+      
+.socialMedia {
+  gap: 2rem;
+}
+      
+.socialMedia i {
+  font-size: 2rem;
+}
+      
+.footerLogo {
+  gap: 0.2rem;
+}
+      
+.footerLogo img {
+  height: 40px;
+}
+      
+.footerLogo p {
+  font-size: 0.5rem;
+}
+      
+.footerPolitik a {
+  font-size: 0.8rem;
+}
+
+/* FORSIDE SLUT
+_____________________________________________________________________________________ */
 
 
 
@@ -1201,8 +1201,12 @@ footer {
     }
 
     .omkMain h2 {
-        padding-block: var(--mobileLargeSpacer);
-    }
+   padding-block: var(--mobileLargeSpacer);
+   font-size: clamp(1.2rem, 4.5vw, 2rem);
+   padding-bottom: var(--desktopSMSpacer);
+   text-align: center;
+  }
+                
 
     .omkMain img {
         border-radius: 0;
@@ -1265,12 +1269,9 @@ footer {
         padding: 0;
     }
 
-  
-
     .employeeName p {
         padding: 0;
     }
-    
 
     .phone {
         display: inline-block;
@@ -1304,77 +1305,40 @@ footer {
 
 
 
-    .omkMain h2 {
-            font-size: clamp(1.2rem, 4.5vw, 2rem);
-            padding-bottom: var(--desktopSMSpacer);
-            text-align: center;
-    }
 
 
 
 
-    /* Footer */
-
-    footer {
-        height: 80px;
-    }
-
-    .footerWrapper {
-
-        padding-inline: 5%;
-    }
-
-    .socialMedia {
-
-        gap: 2rem;
-    }
-
-    .socialMedia i {
-        font-size: 2rem;
-    }
 
 
-    .footerLogo {
-        gap: 0.2rem;
-    }
 
-    .footerLogo img {
-        height: 40px;
-    }
-
-    .footerLogo p {
-        font-size: 0.5rem;
-    }
-
-
-    .footerPolitik a {
-        font-size: 0.8rem;
-
-    }
-
-    /* ____________________________________________ */
-    /* Medlemsskab */
+/* ____________________________________________ */
+/* Medlemsskab */
     
-          .konArt h2 {
-              font-size: 2rem;
-              margin: 0;
-          }
+.konArt h2 {
+ font-size: 2rem;
+ margin: 0;
+}
     
-          .konArt table {
-              max-width: 90%;
-              font-size: 1rem;
-              margin-top: 0;
-          }
-          
-        .konArt p {
-        max-width: 100%;
-        margin-inline: var(--mobileLargeSpacer);
-        font-size: 1rem;
-        }
+.konArt table {
+ max-width: 90%;
+ font-size: 1rem;
+ margin-top: 0;
+}
 
-        /* Medlemsskab slut
-      ____________________________________________*/
+.konArt p {
+ max-width: 100%;
+ margin-inline: var(--mobileLargeSpacer);
+ font-size: 1rem;
+}
 
+/* Medlemsskab slut
+____________________________________________*/
+
+
+
+
+/* ___________________________________________ */
 /* Godt at vide */
 
 .wideCardContent a {
@@ -1386,54 +1350,74 @@ footer {
   padding-block: var(--mobileLargeSpacer);
 }
 
+/* Godt at vide SLUT
+__________________________________________________ */
 
 
 
 
-  /* Footer */
+/* _________________________________________________ */
+/* Events */
 
-  footer {
-    height: 80px;
-  }
+.events {
+padding: 0.5rem;
+font-size: 2.5rem;
+}
+    
+.eventsArticle {
+ flex-direction: column;
+ height: auto;
+ font-size: clamp(1rem, 1vw, 1.2rem);
+ margin-inline: var(--desktopMediumSpacer);
+}
+    
+ .eventsArticle img {
+ width: 100%;
+ border-bottom-left-radius: 0px;
+ border-top-right-radius: 20px;
+}
+    
+ td:nth-child(odd) {
+ font-weight: bold;
+ padding-right: 2rem;
+ }
+    
+.eventsArticle table {
+ padding-top: 2rem;
+}
+    
+    
+.eventsArticle td {
+ padding-bottom: 1rem;
+}
 
-  .footerWrapper {
-    padding-inline: 5%;
-  }
+  /* Events SLUT 
+  ____________________________________________________________________*/
 
-  .socialMedia {
-    gap: 2rem;
-  }
 
-  .socialMedia i {
-    font-size: 2rem;
-  }
 
-  .footerLogo {
-    gap: 0.2rem;
-  }
-
-  .footerLogo img {
-    height: 40px;
-  }
-
-  .footerLogo p {
-    font-size: 0.5rem;
-  }
-
-  .footerPolitik a {
-    font-size: 0.8rem;
-  }
 }
 
 @media screen and (min-width: 900px) {
   nav .hamburger-menu {
     display: none;
+
   }
 }
 
+@media screen and (max-width: 625px) {
+  .events {
+    padding: 0.2rem;
+    font-size: 2rem;
+  }
+}
 
 @media screen and (max-width: 400px) {
   .konArt p:nth-last-of-type(1) {
     padding-bottom: var(--mobileLargeSpacer);
+  }
+
+.eventsArticle {
+    margin-inline: 1.5rem;
   }
 }
