@@ -267,7 +267,7 @@ nav i {
 
 /* Hero */
 
-main img {
+.hero {
     display: block;
     width: 100%;
     border-radius: 0;
