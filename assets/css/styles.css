@@ -1053,6 +1053,13 @@ ________________________________________________________________________________
 
 /* Om orienteringskluv SLUT
 _________________________________________________________________________________________________________________ */
+
+/* ___________________________________________________________________________________________________
+Træninger */
+.traMain img {
+  max-height: 42rem;
+}
+
 }
 
 
@@ -1068,10 +1075,11 @@ ________________________________________________________________________________
   nav ul {
     display: none;
   }
+/* _______________________________________________________________________________________________________________ */
+/* MEDIA QUERRIES */
 
-  .login {
-    display: none;
-  }
+
+
 
   nav a:hover {
     text-decoration: none;
@@ -1413,11 +1421,62 @@ font-size: 2.5rem;
 }
 
 @media screen and (max-width: 400px) {
+
+
+/* Medlemskab */
+
   .konArt p:nth-last-of-type(1) {
     padding-bottom: var(--mobileLargeSpacer);
   }
 
+
+
+/* Events */
 .eventsArticle {
-    margin-inline: 1.5rem;
+  margin-inline: 1.5rem;
+
+}
+
+
+
+/* Træninger */
+.traCard {
+ width: 90%;
+ height: 20rem;
+ padding: 0;
+}
+    
+.traH2 {
+ padding-bottom: var(--mobileMediumSpacer);
+}
+    
+.traCard p {
+ margin-bottom: var(--mobileSmallSpacer);
+}
+
+
+
+.traMain {
+flex-direction: column;
+align-items: center;
+}
+
+  .traMain img {
+    max-width: 90%;
+    margin: 0 auto var(--mobileMediumSpacer) auto;
+    margin-bottom: var(--mobileSmallSpacer);
+  }
+
+  .traBody {
+    max-width: 90%;
+    padding-right: 0;
+  }
+
+  .traBody p {
+    text-align: left center;
+  }
+
+  .traeningerBottomP {
+    padding-bottom: var(--mobileSmallSpacer);
   }
 }
