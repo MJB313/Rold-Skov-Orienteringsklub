@@ -17,6 +17,7 @@
 
   /* Spacere */
 
+
   --mobileSmallSpacer: 0.9375rem;
   --mobileMediumSpacer: 1.25rem;
   --mobileLargeSpacer: 1.875rem;
@@ -231,6 +232,9 @@ nav i {
 /* Her styles MAIN */
 
 
+
+
+
 /* ____________________________________________________________________________________________________________________________________________ */
 /* Børn og unge + RSOK'kerne + Hvad er O-kort + Kort og kompas ---- de 4 undersider*/
 
@@ -264,12 +268,13 @@ nav i {
 /*________________________________________________*/
 
 
+
 /* _________________________________________________________________________________________________________________________________________ */
 /* FORSIDE */
 
 /* Hero */
 
-main img {
+.hero {
   display: block;
   width: 100%;
   border-radius: 0;
@@ -415,9 +420,6 @@ section .smallCard h3 {
 /* FORSIDE SLUT
 _____________________________________________________________________________________________________________________________________________________ */
 
-
-
-
 /* ______________________________________________________________________________________________________________________ */
 /* OM KLUBBEN */
 
@@ -507,12 +509,38 @@ ________________________________________________________________________________
   margin-bottom: 7.5rem;
 }
 
+
+/* Tabel */
+
+
+td:nth-child(odd) {
+    padding-right: 3rem;
+}
+
+td {
+    border: 1px solid black;
+    font-size: 1.5rem;
+    padding: 1rem;
+    width: 50%;
+}
+
+td:nth-child(even) {
+    font-weight: bold;
+}
+
+table {
+    width: 80%;
+    margin:  0 auto var(--desktopMediumSpacer) auto;
+    border-collapse: collapse;
+}
+
+table a {
+    color: black;
+
+}
+
 /* Om klubben slut */
 /* __________________________________________________________________________________________________________________________________ */
-
-
-
-
 
 
 
@@ -527,30 +555,65 @@ ________________________________________________________________________________
 
 
 
-
-
-
-
 /* _________________________________________________________________________________________________________________________________ */
 /* Godt at vide */
 
 /* Godt at vide slut */
 /* __________________________________________________________________________________________________________________________________ */
 
-/* _________________________________________________________________________________________________________________________________ */
-/* Hvad er o kort */
 
-/* hvad er o kort slut */
-/* __________________________________________________________________________________________________________________________________ */
 
-/* _________________________________________________________________________________________________________________________________ */
-/* Kort og kompas */
 
-/* Kort og kompas slut */
-/* __________________________________________________________________________________________________________________________________ */
+
+
+
+
+
+
+
+
+
+
+
 
 /* _________________________________________________________________________________________________________________________________ */
 /* medlemsskab */
+.konArt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+article h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-block: var(--desktopSmallSpacer);
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+td {
+  border: 1px solid black;
+  padding: 24px;
+}
+
+.konArt p {
+  text-align: left;
+  margin-inline: 20rem;
+  line-height: 150%;
+  padding-bottom: var(--desktopSmallSpacer);
+}
+
+.konArt p:nth-last-of-type(1) {
+  padding-bottom: 7.6rem;
+}
 
 /* medlemsskab slut */
 /* __________________________________________________________________________________________________________________________________ */
@@ -572,13 +635,17 @@ ________________________________________________________________________________
 
 .omoMain h2 {
   text-align: center;
+  margin-block: var(--desktopSmallSpacer);
   margin-block: var(--desktopMediumSpacer);
+
 }
 
 .omoWidecard {
   width: 90%;
   height: 32rem;
   margin: 0 auto;
+  background-color: #f5f1e4;
+  border-radius: 0.625rem;
   margin-bottom: var(--dekstopLargeSpacer);
   background-color: #f5f1e4;
   border-radius: 20px;
@@ -601,6 +668,8 @@ ________________________________________________________________________________
   padding-inline: var(--desktopSMSpacer);
 }
 
+
+.test {
 .omoTekst {
   display: flex;
   align-items: center;
@@ -650,6 +719,7 @@ section .omoSmallCard h3 {
   padding-inline: 0.5rem;
 }
 
+
 .omoSmallCard p {
   font-size: clamp(1rem, 1.5vw, 1.375rem);
   font-weight: var(--fw-medium);
@@ -674,11 +744,9 @@ section .omoSmallCard h3 {
 /* om orienteringsløb slut */
 /* __________________________________________________________________________________________________________________________________ */
 
-
-
-
-
-
+  
+  
+  
 /* _________________________________________________________________________________________________________________________________ */
 /* træninger */
 
@@ -768,6 +836,9 @@ section .traCard h3 {
 /* træninger slut */
 /* __________________________________________________________________________________________________________________________________ */
 
+  
+  
+  
 /* MAIN DONE */
 /* _________________________________________________________________________________________________________________________________________________________________________ */
 
@@ -832,8 +903,11 @@ footer {
   font-weight: var(--fw-semibold);
 }
 
+
+
 /* Footer slut 
 ____________________________________________________*/
+
 
 
 
@@ -849,6 +923,11 @@ ____________________________________________________*/
 /* MEDIA QUERRIES */
 
 @media screen and (max-width: 1279px) {
+  
+  
+ /* Forside
+  ____________________________________________ */
+  
   /* Nav */
 
   nav {
@@ -862,13 +941,33 @@ ____________________________________________________*/
   nav i {
     font-size: 2rem;
   }
+  
+    nav i {
+    font-size: 2rem;
+  }
 
+
+  
+  
   /* Intro sektion */
 
   .intro p {
     padding: var(--mobileSmallSpacer);
     font-size: 1rem;
   }
+
+  /* BIG CARD */
+
+  .bigCard {
+    height: 300px;
+    padding: var(--desktopSMSpacer);
+  }
+
+  .bigCard h2 {
+    padding: 0;
+    font-size: 1.125rem;
+
+
 
   /* BIG CARD */
 
@@ -891,31 +990,65 @@ ____________________________________________________*/
     padding-block: 0.8rem;
     font-size: 0.7rem;
   }
+    
+  .bigCard p {
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .bigCard a {
+    padding-block: 0.8rem;
+    font-size: 0.7rem;
+  }
+    
+    
 
   /* Small cards */
 
   .smallCard {
     width: 25%;
   }
-
+    
+    
   /* Footer */
+  
 
   .footerWrapper {
     padding-inline: 10%;
   }
+    
+  /* Forside slut
+  ____________________________________________ */
 
-
+    
+    
+    
+   /* GAV 4 undersider 
+    ______________________________________________________*/ 
+     
   .gav4Sider{
     grid-template-columns: 1fr;
     margin-block: var(--desktopMediumSpacer);
   }
-
-
-
-
+    
+   /* GAV 4 undersider slut 
+    ______________________________________________________*/ 
 }
 
+  
+
+
+
+
+
+
+
 @media screen and (max-width: 900px) {
+  
+   /* Forside
+  ____________________________________________ */
+  
+  
   /* NAV */
 
   nav ul {
@@ -930,10 +1063,12 @@ ____________________________________________________*/
     text-decoration: none;
   }
 
+  nav a:hover {
+    text-decoration: none;
+  }
 
-
-
-
+  
+  
   /* Intro text */
 
   .intro h1 {
@@ -944,7 +1079,9 @@ ____________________________________________________*/
   .intro p {
     padding-block: 0 var(--mobileLargeSpacer);
   }
+  
 
+  
   /* Big card */
 
   .bigCard {
@@ -956,10 +1093,8 @@ ____________________________________________________*/
     grid-template-columns: 1fr;
     padding-top: 0;
   }
-
-
-
-
+  
+   
 
   /* Small card */
 
@@ -971,9 +1106,8 @@ ____________________________________________________*/
   .smallCard {
     width: 100%;
     gap: 0;
-  }
-
-  section .smallCard h3 {
+   
+   section .smallCard h3 {
     font-size: clamp(1.2rem, 4vw, 2rem);
   }
 
@@ -987,10 +1121,9 @@ ____________________________________________________*/
   .smallCard a {
     font-size: clamp(1rem, 3vw, 1.2rem);
   }
+    
 
-
-
-
+    
 
   /* Footer */
 
@@ -1026,41 +1159,69 @@ ____________________________________________________*/
     font-size: 0.8rem;
   }
 
-
-
-
-/* 4 undersider */
-
-
-  .content h2 {
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
-  }
-
-
-  .gav4Sider {
-    margin-top: var(--mobileLargeSpacer);
-
-
-  }
-
-  .gav4Sider img {
-    height: 400px;
-  }
-
-  .gav4Sider p {
-    font-size: clamp(1rem, 2vw, 1.4rem);
-      padding-bottom: var(--desktopSmallSpacer);
+  
+ 
+    /* Forside slut
+  ____________________________________________ */
+  
+  
+  
+  
+  
+  /* Medlemsskab 
+  ____________________________________________*/
+  
+    .konArt h2{
+        font-size: 2rem;
+        margin: 0;
     }
 
+    .konArt table{
+        max-width: 90%;
+        font-size: 1rem;
+        margin-top: 0;
+    }
 
-
-
-}
+    .konArt p{
+        max-width: 100%;
+        margin-inline: var(--mobileLargeSpacer);
+        font-size: 1rem;
+    }
+  
+    /* Medlemsskab slut
+  ____________________________________________*/
+  }
+  
 
 @media screen and (min-width: 900px) {
   nav .hamburger-menu {
     display: none;
   }
 }
+  
+  
+
+@media screen and (max-width: 400px){
+    
+    .konArt p:nth-last-of-type(1){
+        padding-bottom: var(--mobileLargeSpacer);
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
