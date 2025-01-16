@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om klubben | Rold Skov Orienteringsklub</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta
+      name="description"
+      content="Rold skov orienteringsklubs medlemsskab, er et kontigent der skal betales årligt."
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img
+            src="./assets/images/RoldSkovOK Logo.png"
+            alt="Logo af Rold Skov orienteringsklub"
+          />
+        </a>
+
+        <!-- Taget fra denne Codepen: https://codepen.io/alvarotrigo/pen/yLzaPVJ  og justeret til vores layout-->
+
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+
+          <ul class="menu__box">
+            <li><a class="menu__item" href="events.html">Events</a></li>
+            <li><a class="menu__item" href="omKlubben.html">Om klubben</a></li>
+            <li>
+              <a class="menu__item" href="godtAtVide.html">Godt at vide</a>
+            </li>
+            <li><a class="menu__item" href="træninger.html">Træninger</a></li>
+            <li>
+              <a class="menu__item" href="omOrienteringsklubben.html"
+                >Om orienteringsklubben</a
+              >
+            </li>
+            <li>
+              <a class="menu__item" href="medlemsskab.html">Medlemsskab</a>
+            </li>
+            <li><a class="menu__item" href="#">Log in</a></li>
+          </ul>
+        </div>
+        <!-- Codepen ____________________________________________________________________ -->
+
+        <ul class="desktopNavHover">
+          <li><a href="omKlubben.html">Om klubben</a></li>
+          <li><a href="godtAtVide.html">Godt at vide</a></li>
+          <li><a href="træninger.html">Træninger</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li>
+            <a href="omOrienteringsklubben.html">Om orienteringsklubben</a>
+          </li>
+          <li><a href="medlemsskab.html">Medlemsskab</a></li>
+        </ul>
+
+        <div class="login">
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+          <a href="#">Log in</a>
+        </div>
+      </nav>
+    </header>
+
+    <article class="konArt">
+      <h2>Kontigent</h2>
+
+      <!-- tr er en table row & td er dataen inde i boksene det vil sige der skal være 2 td inde i 1 table row. -->
+      <!-- ----------------------------------------------------------------- -->
+
+      <table>
+        <tr>
+          <td>Voksne 21 og opefter</td>
+          <td>550,00 kr.</td>
+        </tr>
+        <tr>
+          <td>Unge 6 - 20 år</td>
+          <td>350,00 kr</td>
+        </tr>
+        <tr>
+          <td>Børn 0 - 5 år</td>
+          <td>10,00 kr.</td>
+        </tr>
+        <tr>
+          <td>Passive medlemmer</td>
+          <td>120,00 kr.</td>
+        </tr>
+      </table>
+      <p>
+        Som medlem af Rold Skov Orienteringsklub, er der et årligt kontingent
+        der skal betales, for fortsat at kunne være en del af klubben. Dette
+        beløb variere efter alder og status. På skemaet ovenfor kan du aflæse
+        hvilken gruppe du hører til.
+      </p>
+
+      <p>
+        Hvis du kunne tænke dig at blive medlem at klubben, så er der en
+        indmeldingsblanket du bedes udfylde først. Indmeldingsblanketten kan
+        findes <a href="#">her</a>.
+      </p>
+      <p class="medlemSpacer">
+        Kontingentet skal indbetales til vores hovedkonto, som har reg. og konto
+        nr.: <a href="#">9070 2077776306</a>
+      </p>
+    </article>
+
+    <footer>
+      <div class="footerWrapper">
+        <div class="socialMedia">
+          <a href="https://www.facebook.com/RoldSkovOK" target="_blank">
+            <i class="fa-brands fa-square-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/roldskovorienteringsklub/?hl=da"
+            target="_blank"
+          >
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+        </div>
+
+        <div class="footerLogo">
+          <img
+            src="./assets/images/RoldSkovOK Logo.png"
+            alt="Logo af Rold Skov orienteringsklub"
+          />
+          <p>Copyright © 1942 - 2025 RoldSkovOK®</p>
+        </div>
+
+        <div class="footerPolitik">
+          <a href="#">Cookie politik</a>
+          <a href="#">Privatlivs politik</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
