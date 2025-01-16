@@ -230,7 +230,6 @@ nav i {
 /* ____________________________________________________________________________________________________________________________________________________________________ */
 /* Her styles MAIN */
 
-
 /* ______________________________________________________________________________________________________________________________ */
 /* Events */
 
@@ -246,7 +245,6 @@ nav i {
   margin-inline: var(--dekstopLargeSpacer);
   border-radius: 20px;
   height: 400px;
- 
 }
 
 .eventsArticle img {
@@ -269,24 +267,18 @@ nav i {
   font-size: clamp(0.8rem, 1.2vw, 1.2rem);
 }
 
-
-
-
 .eventsArticle td {
   text-align: left;
   padding: 0.9rem 0 0.9rem 0;
   border: none;
   width: 100%;
   font-size: clamp(0.8rem, 1.2vw, 1rem);
-
-
 }
 
 .eventsTable td:nth-child(odd) {
   font-weight: bold;
   margin-right: 1rem;
 }
-
 
 .eventsTable {
   padding-top: 1rem;
@@ -296,7 +288,6 @@ nav i {
 
 /* Events slut */
 /* _______________________________________________________________________________________________________________________________ */
-
 
 /* ____________________________________________________________________________________________________________________________________________ */
 /* Børn og unge + RSOK'kerne + Hvad er O-kort + Kort og kompas ---- de 4 undersider*/
@@ -329,19 +320,15 @@ nav i {
 /* Børn og unge+RSOK'kerne + Hvad er O-kort + Kort og kompas ---- de 4 undersider SLUT */
 /*________________________________________________*/
 
-
-
-
 /* _________________________________________________________________________________________________________________________________________ */
 /* FORSIDE */
 
 /* Hero */
 
 .hero {
-    display: block;
-    width: 100%;
-    border-radius: 0;
-
+  display: block;
+  width: 100%;
+  border-radius: 0;
 }
 
 /* Title / introtekst */
@@ -361,12 +348,12 @@ nav i {
 /* BIG CARD */
 
 .bigCardSection {
-    padding-inline: var(--dekstopLargeSpacer);
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--dekstopLargeSpacer);
-    margin-bottom: var(--desktopMediumSpacer);
+  padding-inline: var(--dekstopLargeSpacer);
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--dekstopLargeSpacer);
+  margin-bottom: var(--desktopMediumSpacer);
 }
 
 .bigCard {
@@ -411,8 +398,8 @@ nav i {
 /* Kommende events */
 
 .futureEvents {
-    padding-block: var(--desktopSmallSpacer);
-    margin-bottom: 50px;
+  padding-block: var(--desktopSmallSpacer);
+  margin-bottom: 50px;
 }
 
 .futureEvents h2 {
@@ -449,19 +436,17 @@ nav i {
 }
 
 section .smallCard h3 {
-    font-size: clamp(1.2rem, 1.3vw, 1.6rem);
-    font-weight: var(--fw-semibold);
-    text-align: center;
-    padding-inline: 0.5rem;
-
+  font-size: clamp(1.2rem, 1.3vw, 1.6rem);
+  font-weight: var(--fw-semibold);
+  text-align: center;
+  padding-inline: 0.5rem;
 }
 
 .smallCard p {
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
-    font-weight: var(--fw-medium);
-    text-align: center;
-    padding-inline: 0.5rem;
-
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  font-weight: var(--fw-medium);
+  text-align: center;
+  padding-inline: 0.5rem;
 }
 
 .smallCard a {
@@ -490,28 +475,28 @@ ________________________________________________________________________________
 /* OM KLUBBEN */
 
 .omkMain {
-    padding-inline: var(--dekstopLargeSpacer);
+  padding-inline: var(--dekstopLargeSpacer);
 }
 
 .omkMain h2 {
-    font-size: 2rem;
-    padding-bottom: var(--desktopSMSpacer);
-    text-align: center;
+  font-size: 2rem;
+  padding-bottom: var(--desktopSMSpacer);
+  text-align: center;
 }
 
 .omkMain h3 {
-    padding-bottom: var(--desktopSmallSpacer);
-    font-size: 1.625rem;
+  padding-bottom: var(--desktopSmallSpacer);
+  font-size: 1.625rem;
 }
 
 .omkMain h4 {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .omkIntro {
-    display: grid;
-    grid-template-columns: 50% 1fr;
-    gap: var(--desktopSmallSpacer);
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  gap: var(--desktopSmallSpacer);
 }
 
 .omkIntro img {
@@ -523,16 +508,16 @@ ________________________________________________________________________________
 }
 
 .omkIntro p {
-    font-size: clamp(0.85rem, 1.2vw, 2rem);
-    padding-right: 1rem;
+  font-size: clamp(0.85rem, 1.2vw, 2rem);
+  padding-right: 1rem;
 }
 
 .introText h4 {
-font-size: clamp(1rem, 1.2vw, 2rem);
+  font-size: clamp(1rem, 1.2vw, 2rem);
 }
 
-#omkIntroH4{
-    padding-top: var(--mobileSmallSpacer);
+#omkIntroH4 {
+  padding-top: var(--mobileSmallSpacer);
 }
 
 .kontaktpersoner {
@@ -546,30 +531,30 @@ font-size: clamp(1rem, 1.2vw, 2rem);
 }
 
 .mobileDisplay {
-    display: grid;
-    justify-content: space-between;
+  display: grid;
+  justify-content: space-between;
 }
 
 .employeeCard {
-    width: 300px;
-    display: grid;
-    gap: 0.5rem;
+  width: 300px;
+  display: grid;
+  gap: 0.5rem;
 }
 
 .employeeName {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .employeeCard img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    object-position: center;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .employeeCard h3 {
-    font-size: 1.25rem;
-    padding: 0;
+  font-size: 1.25rem;
+  padding: 0;
 }
 
 .employeeCard p {
@@ -587,11 +572,11 @@ font-size: clamp(1rem, 1.2vw, 2rem);
 
 .employeeCard img {
   border-radius: 20px;
-  object-fit: center;
+  object-fit: cover;
 }
 
 .phone {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .phone i {
@@ -605,42 +590,34 @@ font-size: clamp(1rem, 1.2vw, 2rem);
 }
 
 .bestyrelsesmedlemmer {
-
   margin-bottom: 7.5rem;
 }
 
-
-
-
-
 /* Tabel */
 
-
 .omkTable td:nth-child(odd) {
-    padding-right: 3rem;
+  padding-right: 3rem;
 }
 
 .omkTable td {
-    border: 1px solid black;
-    font-size: 1.5rem;
-    padding: 1rem;
-    width: 50%;
+  border: 1px solid black;
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 50%;
 }
 
 .omkTable td:nth-child(even) {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .omkTable {
-    width: 80%;
-    margin:  0 auto var(--desktopMediumSpacer) auto;
-    border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto var(--desktopMediumSpacer) auto;
+  border-collapse: collapse;
 }
 
 .omkTable td a {
-    color: black;
-    
-
+  color: black;
 }
 
 /* Om klubben slut */
@@ -666,12 +643,10 @@ font-size: clamp(1rem, 1.2vw, 2rem);
   background-color: #f5f1e4;
   border-radius: 0.625rem;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-
 }
 
-.wideCard img{
+.wideCard img {
   border-radius: 20px 20px 0 0;
-
 }
 .wideCardImg1 {
   width: 100%;
@@ -711,7 +686,7 @@ font-size: clamp(1rem, 1.2vw, 2rem);
 }
 
 .wideCardTitle {
-  font-size: clamp(1.3rem,2vw,2rem);
+  font-size: clamp(1.3rem, 2vw, 2rem);
   color: #000000;
   padding: 1.5rem;
 }
@@ -725,7 +700,7 @@ font-size: clamp(1rem, 1.2vw, 2rem);
   text-decoration: none;
   background-color: var(--freshMint);
   border-radius: 20px;
-  font-size: clamp(0.8rem,1.2vw,1.2rem);
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
   font-weight: var(--fw-medium);
 }
 
@@ -736,14 +711,6 @@ font-size: clamp(1rem, 1.2vw, 2rem);
 
 /* Godt at vide slut */
 /* __________________________________________________________________________________________________________________________________ */
-
-
-
-
-
-
-
-
 
 /* _________________________________________________________________________________________________________________________________ */
 /* medlemsskab */
@@ -770,7 +737,7 @@ article h2 {
 td {
   border: 1px solid black;
   padding: 1.5rem;
-  text-align: left center;
+  text-align: left;
 }
 
 .konArt p {
@@ -778,7 +745,6 @@ td {
   margin: 0 auto;
   line-height: 150%;
   padding-bottom: var(--desktopSmallSpacer);
-  
 }
 
 .konArt p:last-child {
@@ -798,7 +764,7 @@ td {
 #omoHeroImg {
   width: 100%;
   height: 60vh;
-  border-radius: none;
+  border-radius: 0;
   object-fit: cover;
   object-position: center center;
 }
@@ -822,8 +788,6 @@ td {
   padding-inline: var(--dekstopLargeSpacer);
   height: 32rem;
   border-radius: 0.625rem;
-
-
 }
 
 .omoTekst {
@@ -853,7 +817,7 @@ td {
   justify-content: space-between;
 }
 
-.omoSmallCardWrapper h3{
+.omoSmallCardWrapper h3 {
   padding-block: var(--mobileSmallSpacer);
 }
 
@@ -865,14 +829,8 @@ td {
   width: 100%;
 }
 
-
 /* om orienteringsløb slut */
 /* __________________________________________________________________________________________________________________________________ */
-
-
-
-
-
 
 /* _________________________________________________________________________________________________________________________________ */
 /* træninger */
@@ -953,7 +911,6 @@ td {
 
 .traBody {
   width: 100%;
-
 }
 
 .traBody p {
@@ -975,13 +932,12 @@ footer {
 }
 
 .footerWrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 10px 20%;
-    background-color: var(--fernLeaf);
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 10px 20%;
+  background-color: var(--fernLeaf);
 }
 
 .socialMedia {
@@ -1006,15 +962,15 @@ footer {
 }
 
 .footerLogo img {
-    height: 50px;
-    display: block;
-    border-radius: 0;
+  height: 50px;
+  display: block;
+  border-radius: 0;
 }
 
 .footerLogo p {
-    font-size: 0.6rem;
-    padding: 0;
-    font-weight: var(--fw-semibold);
+  font-size: 0.6rem;
+  padding: 0;
+  font-weight: var(--fw-semibold);
 }
 
 .footerPolitik {
@@ -1029,22 +985,14 @@ footer {
   font-weight: var(--fw-semibold);
 }
 
-
 /* _______________________________________________________________________________________________________________ */
 /* MEDIA QUERRIES */
 
 /* ____________________________________________________________________________________________________________________________________ */
 
-
-
-
-
-
-
 @media screen and (max-width: 1279px) {
   /* ______________________________________________________________________________________________________________________________ */
   /* FORSIDE */
-
 
   /* Nav */
 
@@ -1061,10 +1009,6 @@ footer {
     font-size: 2rem;
   }
 
-  
-
-
-
   /* Intro sektion */
 
   .intro p {
@@ -1072,140 +1016,115 @@ footer {
     font-size: 1rem;
   }
 
+  /* BIG CARD */
 
+  .bigCardSection {
+    padding-inline: var(--desktopSmallSpacer);
+  }
 
- /* BIG CARD */
-    
-.bigCardSection {
- padding-inline: var(--desktopSmallSpacer);
- }
-    
-.bigCard {
- height: 330px;
- padding: var(--desktopSMSpacer);
-}
-    
- .bigCard h2 {
- padding: 0;
- font-size: 1.125rem;
- }
-    
-.bigCard p {
- padding: 0;
- font-size: 1rem;
-}
-    
-.bigCard a {
- padding-block: 0.8rem;
- font-size: 0.7rem;
-}
+  .bigCard {
+    height: 330px;
+    padding: var(--desktopSMSpacer);
+  }
 
+  .bigCard h2 {
+    padding: 0;
+    font-size: 1.125rem;
+  }
 
+  .bigCard p {
+    padding: 0;
+    font-size: 1rem;
+  }
 
-/* Small cards */
-    
-.smallCardWrapper {
- padding-inline: var(--mobileSmallSpacer);
-}
-    
-.smallCard {
- width: 25%;
-}
+  .bigCard a {
+    padding-block: 0.8rem;
+    font-size: 0.7rem;
+  }
 
+  /* Small cards */
 
+  .smallCardWrapper {
+    padding-inline: var(--mobileSmallSpacer);
+  }
 
-/* Footer */
+  .smallCard {
+    width: 25%;
+  }
 
-.footerWrapper {
- padding-inline: 10%;
-}
+  /* Footer */
 
-/* Forside SLUT
+  .footerWrapper {
+    padding-inline: 10%;
+  }
+
+  /* Forside SLUT
 ____________________________________________________________________________________________________________ */
 
-
-
-
-
   /* ________________________________________________________________________________________________________ */
-    /* Om klubben  */
+  /* Om klubben  */
 
-    .omkMain {
-        padding-inline: var(--desktopSmallSpacer);
-    }
+  .omkMain {
+    padding-inline: var(--desktopSmallSpacer);
+  }
 
-    .employeeCard {
-        width: 220px;
-    }
+  .employeeCard {
+    width: 220px;
+  }
 
-    .employeeCard img {
-        width: 220px;
-        height: 150px;
-    }
+  .employeeCard img {
+    width: 220px;
+    height: 150px;
+  }
 
-    .omkMain h1 {
-        padding-block: var(--mobileLargeSpacer);
-    }
+  .omkMain h1 {
+    padding-block: var(--mobileLargeSpacer);
+  }
 
-/* Om klubben SLUT
+  /* Om klubben SLUT
 _________________________________________________________________________________________________________________ */
 
+  /* _____________________________________________________________________________________________ */
+  /* Om Orienteringsløb */
+  .omoWidecard {
+    padding-inline: var(--mobileSmallSpacer);
+  }
 
-/* _____________________________________________________________________________________________ */
-/* Om Orienteringsløb */
-.omoWidecard {
-  
-  padding-inline: var(--mobileSmallSpacer);
-
-
-}
-
-
-
-
-
-
-/* ___________________________________________________________________________________________________
+  /* ___________________________________________________________________________________________________
 Træninger */
-.traSmallCardWrapper {
-  padding-inline: var(--mobileLargeSpacer);
-}
+  .traSmallCardWrapper {
+    padding-inline: var(--mobileLargeSpacer);
+  }
 
-.traCard {
-  height: 23rem;
-  padding-bottom: 1rem;
-  
-}
+  .traCard {
+    height: 23rem;
+    padding-bottom: 1rem;
+  }
 
-.traCard img {
-  height: 180px;
-}
+  .traCard img {
+    height: 180px;
+  }
 
-.traMain {
-  padding-inline: var(--mobileLargeSpacer);
-}
+  .traMain {
+    padding-inline: var(--mobileLargeSpacer);
+  }
 
-/* Træninger SLUT
+  /* Træninger SLUT
 ______________________________________________________________________________________________________ */
 
-
-/* ________________________________________________________________________________________________ */
-/* 4 undersider */
+  /* ________________________________________________________________________________________________ */
+  /* 4 undersider */
 
   .gav4Sider {
     grid-template-columns: 1fr;
     margin-block: var(--desktopMediumSpacer);
   }
 
-/* 4 undersider */
-/* ______________________________________________________________________________________________________________ */
+  /* 4 undersider */
+  /* ______________________________________________________________________________________________________________ */
 }
 
-
-
-
 @media screen and (max-width: 900px) {
-
   /* _____________________________________________________________________________________________________________ */
   /* Forside */
 
@@ -1219,461 +1138,399 @@ ________________________________________________________________________________
     display: none;
   }
 
-.intro h1 {
-font-size: 2rem;
-padding-block: var(--mobileLargeSpacer);
-}
+  .intro h1 {
+    font-size: 2rem;
+    padding-block: var(--mobileLargeSpacer);
+  }
 
-
-/* _______________________________________________________________________________________________________________ */
-/* MEDIA QUERRIES */
-
-
-
+  /* _______________________________________________________________________________________________________________ */
+  /* MEDIA QUERRIES */
 
   nav a:hover {
     text-decoration: none;
   }
 
+  /* Intro text */
 
+  .omkMain h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    padding-block: var(--mobileLargeSpacer);
+  }
 
+  .omkIntro p {
+    padding-block: 0 var(--mobileLargeSpacer);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+  }
 
-    /* Intro text */
+  .introText h4 {
+    padding-left: var(--mobileLargeSpacer);
+  }
 
-.omkMain h1 {
- font-size: clamp(1.5rem, 5vw, 2.5rem);
- padding-block: var(--mobileLargeSpacer);
-}
+  /* Big card */
 
-.omkIntro p {
- padding-block: 0 var(--mobileLargeSpacer);
- font-size: clamp(1rem, 2vw, 1.2rem);
-}
+  .bigCard {
+    padding: var(--mobileLargeSpacer);
+    gap: 1rem;
+  }
 
-.introText h4 {
-  padding-left: var(--mobileLargeSpacer);
-}
+  .bigCardSection {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
 
+  /* Small card */
 
+  .smallCardWrapper {
+    flex-direction: column;
+    gap: var(--mobileLargeSpacer);
+  }
 
+  .smallCard {
+    width: 100%;
+    gap: 0;
+  }
 
-    /* Big card */
+  section .smallCard h3 {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+  }
 
-.bigCard {
- padding: var(--mobileLargeSpacer);
- gap: 1rem;
-}
+  .smallCard p {
+    font-size: clamp(1rem, 4vw, 1.375rem);
+    font-weight: var(--fw-medium);
+    text-align: center;
+    padding-inline: 0.5rem;
+  }
 
-.bigCardSection {
- grid-template-columns: 1fr;
- padding-top: 0;
-}
+  .smallCard a {
+    font-size: clamp(1rem, 3vw, 1.2rem);
+  }
 
+  /* Footer */
 
+  footer {
+    height: 80px;
+  }
 
+  .footerWrapper {
+    padding-inline: 5%;
+  }
 
-    /* Small card */
+  .socialMedia {
+    gap: 2rem;
+  }
 
-.smallCardWrapper {
- flex-direction: column;
- gap: var(--mobileLargeSpacer);
-}
+  .socialMedia i {
+    font-size: 2rem;
+  }
 
-.smallCard {
- width: 100%;
- gap: 0;
-}
+  .footerLogo {
+    gap: 0.2rem;
+  }
 
-section .smallCard h3 {
-  font-size: clamp(1.2rem, 4vw, 2rem);
- }
+  .footerLogo img {
+    height: 40px;
+  }
 
-.smallCard p {
- font-size: clamp(1rem, 4vw, 1.375rem);
- font-weight: var(--fw-medium);
- text-align: center;
- padding-inline: 0.5rem;
+  .footerLogo p {
+    font-size: 0.5rem;
+  }
 
-}
+  .footerPolitik a {
+    font-size: 0.8rem;
+  }
 
-.smallCard a {
- font-size: clamp(1rem, 3vw, 1.2rem);
-}
-
-
-    
-    /* Footer */
-      
-footer {
- height: 80px;
-}
-      
-.footerWrapper {
-  padding-inline: 5%;
-}
-      
-.socialMedia {
-  gap: 2rem;
-}
-      
-.socialMedia i {
-  font-size: 2rem;
-}
-      
-.footerLogo {
-  gap: 0.2rem;
-}
-      
-.footerLogo img {
-  height: 40px;
-}
-      
-.footerLogo p {
-  font-size: 0.5rem;
-}
-      
-.footerPolitik a {
-  font-size: 0.8rem;
-}
-
-/* FORSIDE SLUT
+  /* FORSIDE SLUT
 _____________________________________________________________________________________ */
 
-
-
-
-
-    /* Om klubben
+  /* Om klubben
     ______________________________________________________________ */
 
-    .omkMain {
-        padding: 0;
-    }
-
-    .omkIntro {
-        display: block;
-    }
-
-    .omkMain h1 {
-        padding-block: var(--mobileLargeSpacer);
-    }
-
-    .omkMain h2 {
-   padding-block: var(--mobileLargeSpacer);
-   font-size: clamp(1.2rem, 4.5vw, 2rem);
-   padding-bottom: var(--desktopSMSpacer);
-   text-align: center;
+  .omkMain {
+    padding: 0;
   }
-                
 
-    .omkMain img {
-        border-radius: 0;
-        padding-bottom: var(--mobileLargeSpacer);
-    }
+  .omkIntro {
+    display: block;
+  }
 
-    .omkMain p{
-        padding-inline: var(--mobileLargeSpacer);
-    }
+  .omkMain h1 {
+    padding-block: var(--mobileLargeSpacer);
+  }
 
-    .employeeCardWrapper {
-        display: block;
-        padding-left:var(--mobileLargeSpacer) ;
-        margin: 0;
-    }
+  .omkMain h2 {
+    padding-block: var(--mobileLargeSpacer);
+    font-size: clamp(1.2rem, 4.5vw, 2rem);
+    padding-bottom: var(--desktopSMSpacer);
+    text-align: center;
+  }
 
-    .kontaktpersoner {
-        margin-bottom: var(--mobileLargeSpacer);
-    }
+  .omkMain img {
+    border-radius: 0;
+    padding-bottom: var(--mobileLargeSpacer);
+  }
 
-    .bestyrelsesmedlemmer {
-        margin-bottom: var(--mobileLargeSpacer);
-    }
+  .omkMain p {
+    padding-inline: var(--mobileLargeSpacer);
+  }
 
-    .employeeCard {
-        width: 100%;
-        display: flex;
-        padding: 0 0 var(--mobileLargeSpacer) 0;
-    }
+  .employeeCardWrapper {
+    display: block;
+    padding-left: var(--mobileLargeSpacer);
+    margin: 0;
+  }
 
-    .employeeCard img {
-        width: 30%;
-        height: 150px;
-        padding: 0;
-        margin-right: var(--mobileSmallSpacer);
-        border-radius: 20px;
-    }
+  .kontaktpersoner {
+    margin-bottom: var(--mobileLargeSpacer);
+  }
 
-    .omkMain h3 {
-        padding-inline: var(--mobileLargeSpacer);
-    }
+  .bestyrelsesmedlemmer {
+    margin-bottom: var(--mobileLargeSpacer);
+  }
 
-    .employeeName h4 {
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
-    }
+  .employeeCard {
+    width: 100%;
+    display: flex;
+    padding: 0 0 var(--mobileLargeSpacer) 0;
+  }
 
-    .employeeName p{
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
-    }
+  .employeeCard img {
+    width: 30%;
+    height: 150px;
+    padding: 0;
+    margin-right: var(--mobileSmallSpacer);
+    border-radius: 20px;
+  }
 
-    .mobileDisplay i {
-        font-size: 1.2rem;
-    }
+  .omkMain h3 {
+    padding-inline: var(--mobileLargeSpacer);
+  }
 
-    .mobileDisplay a {
-        font-size: clamp(0.9rem, 2.5vw, 1.5rem);
-    }
+  .employeeName h4 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+  }
 
-    .employeeName {
-        padding: 0;
-    }
+  .employeeName p {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+  }
 
-    .employeeName p {
-        padding: 0;
-    }
+  .mobileDisplay i {
+    font-size: 1.2rem;
+  }
 
-    .phone {
-        display: inline-block;
-        padding: 0;
-    }
-    
+  .mobileDisplay a {
+    font-size: clamp(0.9rem, 2.5vw, 1.5rem);
+  }
 
+  .employeeName {
+    padding: 0;
+  }
 
+  .employeeName p {
+    padding: 0;
+  }
 
-    /* Tabel */
+  .phone {
+    display: inline-block;
+    padding: 0;
+  }
 
-    .omkTable tr {
-        display: grid;
-        border-bottom: 1.5px solid black;
+  /* Tabel */
 
-    }
+  .omkTable tr {
+    display: grid;
+    border-bottom: 1.5px solid black;
+  }
 
-   .omkTable td {
-        width: 100%;
-        border:none;
-        font-size: clamp(1.2rem, 4vw, 2rem);
-    }
+  .omkTable td {
+    width: 100%;
+    border: none;
+    font-size: clamp(1.2rem, 4vw, 2rem);
+  }
 
-  .omkTable td:nth-of-type(even){
-        padding-top:0;
-    }
+  .omkTable td:nth-of-type(even) {
+    padding-top: 0;
+  }
 
   .omkTable td:nth-of-type(odd) {
-        padding-bottom: 0.5;
-    }
+    padding-bottom: 0.5rem;
+  }
 
+  /* ____________________________________________ */
+  /* Medlemsskab */
 
+  .konArt h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
 
+  .konArt table {
+    max-width: 90%;
+    font-size: 1rem;
+    margin-top: 0;
+  }
 
+  .konArt p {
+    max-width: 100%;
+    margin-inline: var(--mobileLargeSpacer);
+    font-size: 1rem;
+  }
 
-
-
-
-
-
-/* ____________________________________________ */
-/* Medlemsskab */
-    
- .konArt h2 {
-   font-size: 2rem;
-   margin: 0;
- }
-
- .konArt table {
-   max-width: 90%;
-   font-size: 1rem;
-   margin-top: 0;
- }
-
- .konArt p {
-   max-width: 100%;
-   margin-inline: var(--mobileLargeSpacer);
-   font-size: 1rem;
- }
-
-/* Medlemsskab slut
+  /* Medlemsskab slut
 ____________________________________________*/
 
+  /* ___________________________________________ */
+  /* Godt at vide */
 
-
-
-/* ___________________________________________ */
-/* Godt at vide */
-
-.wideCardContent a {
+  .wideCardContent a {
     width: 75%;
-}
+  }
 
-.gavH1 {
-  font-size: 2.2rem;
-  padding-block: var(--mobileLargeSpacer);
-}
+  .gavH1 {
+    font-size: 2.2rem;
+    padding-block: var(--mobileLargeSpacer);
+  }
 
-/* Godt at vide SLUT
+  /* Godt at vide SLUT
 __________________________________________________ */
 
-
-
   /* _________________________________________________________________ */
-    /* 4 undersider */
-  
-    .content h2 {
-      font-size: clamp(1.2rem, 2vw, 1.6rem);
-    }
-  
-    .gav4Sider {
-      margin-top: var(--mobileLargeSpacer);
-    }
-  
-    .gav4Sider img {
-      height: 400px;
-    }
-  
-    .gav4Sider p {
-      font-size: clamp(1rem, 2vw, 1.4rem);
-      padding-bottom: var(--desktopSmallSpacer);
-    }
+  /* 4 undersider */
 
+  .content h2 {
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+  }
 
-/* 4 undersider */
-/* _______________________________________________________________ */
+  .gav4Sider {
+    margin-top: var(--mobileLargeSpacer);
+  }
 
+  .gav4Sider img {
+    height: 400px;
+  }
 
-/* __________________________________________________________________ */
-/* Træninger */
+  .gav4Sider p {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    padding-bottom: var(--desktopSmallSpacer);
+  }
 
-.traSmallCardWrapper {
-  flex-direction: column;
-  padding-inline: var(--mobileSmallSpacer);
+  /* 4 undersider */
+  /* _______________________________________________________________ */
+
+  /* __________________________________________________________________ */
+  /* Træninger */
+
+  .traSmallCardWrapper {
+    flex-direction: column;
+    padding-inline: var(--mobileSmallSpacer);
+  }
+
+  .traCard {
+    width: 100%;
+    height: 450px;
+    padding-bottom: 0;
+  }
+
+  .traCard img {
+    height: 70%;
+  }
+
+  .traMain {
+    grid-template-columns: 1fr;
+    padding-inline: var(--mobileSmallSpacer);
+  }
+
+  .traH2 {
+    font-size: 1.5rem;
+    padding-block: var(--mobileLargeSpacer);
+  }
+
+  .traCard h3 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  .traCard p {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+  }
+
+  /* ______________________________________________________ */
+  /* Om Orienteringsløb */
+
+  .omoWidecard {
+    grid-template-columns: 1fr;
+    height: auto;
+    margin-bottom: var(--mobileLargeSpacer);
+  }
+
+  #omoWidecardImg {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .omoTekst {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .omoMain h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    padding-bottom: var(--mobileSmallSpacer);
+  }
+
+  .omoMain h1 {
+    font-size: clamp(2.2rem, 7vw, 3rem);
+    padding-block: var(--mobileLargeSpacer);
+  }
+
+  /* Events */
+
+  .events {
+    padding: 0.5rem;
+    font-size: 2.5rem;
+  }
+
+  .eventsArticle {
+    flex-direction: column;
+    height: auto;
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    margin-inline: var(--desktopMediumSpacer);
+  }
+
+  .eventsArticle td {
+    width: 0;
+  }
+
+  .eventsArticle img {
+    width: 100%;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+  }
 }
-
-.traCard {
-  width: 100%;
-  height: 450px;
-  padding-bottom: 0;
-}
-
-.traCard img {
-  height: 70%;
-}
-
-.traMain {
-  grid-template-columns: 1fr;
-  padding-inline: var(--mobileSmallSpacer);
-}
-
-.traH2{
-  font-size: 1.5rem;
-  padding-block: var(--mobileLargeSpacer);
-}
-
-.traCard h3 {
-  font-size: clamp(1.5rem,4vw,2rem);
-}
-
-.traCard p {
-  font-size: clamp(1rem,2.5vw,1.3rem);
-}
-
-
-/* ______________________________________________________ */
-/* Om Orienteringsløb */
-
-.omoWidecard {
-grid-template-columns: 1fr;
-height: auto;
-margin-bottom: var(--mobileLargeSpacer);
-}
-
-#omoWidecardImg {
-  width: 100%;
-  border-radius: 20px 20px 0 0;
-}
-
-.omoTekst {
-
-  border-radius: 0 0 20px 20px;
-}
-
-.omoMain h2 {
-  font-size: clamp(2rem,5vw,3rem);
-  padding-bottom: var(--mobileSmallSpacer);
-}
-
-.omoMain h1 {
-  font-size: clamp(2.2rem, 7vw, 3rem);
-  padding-block: var(--mobileLargeSpacer);
-}
-
-
-
-/* Events */
-
-.events {
- padding: .5rem;
- font-size: 2.5rem;
-}
-    
-.eventsArticle {
-flex-direction: column;
-height: auto;
-font-size: clamp(1rem, 1vw, 1.2rem);
-margin-inline: var(--desktopMediumSpacer);
-}
-
-.eventsArticle td {
-width: 0;
-}
-    
-    
-.eventsArticle img {
- width: 100%;
- border-bottom-left-radius: 0px;
- border-top-right-radius: 20px;
-}
-
-
-
-}
-
-
-
-
 
 @media screen and (min-width: 900px) {
   nav .hamburger-menu {
     display: none;
-
   }
 }
 
 @media screen and (max-width: 625px) {
-    .events {
-        padding: .2rem;
-        font-size: 2rem;
-      }
-    
-      .eventsArticle {
-        margin-inline: 1.5rem;
-    
-      }
+  .events {
+    padding: 0.2rem;
+    font-size: 2rem;
+  }
+
+  .eventsArticle {
+    margin-inline: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
-
-
-/* Medlemskab */
+  /* Medlemskab */
 
   .konArt p:nth-last-of-type(1) {
     padding-bottom: var(--mobileLargeSpacer);
   }
 
-
-
-/* Events */
-.eventsArticle {
-  margin-inline: 1.5rem;
-
+  /* Events */
+  .eventsArticle {
+    margin-inline: 1.5rem;
+  }
 }
-
-}
-
