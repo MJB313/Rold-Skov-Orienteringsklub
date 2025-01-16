@@ -395,7 +395,7 @@ main img {
 }
 
 section .smallCard h3 {
-    font-size: clamp(1.2rem, 1.3vw, 1.8rem);
+    font-size: clamp(1.2rem, 1.3vw, 1.6rem);
     font-weight: var(--fw-semibold);
     text-align: center;
     padding-inline: 0.5rem;
@@ -403,7 +403,7 @@ section .smallCard h3 {
 }
 
 .smallCard p {
-    font-size: clamp(1rem, 1.2vw, 1.375rem);
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
     font-weight: var(--fw-medium);
     text-align: center;
     padding-inline: 0.5rem;
