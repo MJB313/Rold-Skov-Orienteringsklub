@@ -231,6 +231,72 @@ nav i {
 /* Her styles MAIN */
 
 
+/* ______________________________________________________________________________________________________________________________ */
+/* Events */
+
+.eventHero {
+  width: 100%;
+  border-radius: 0;
+}
+
+.eventsArticle {
+  background-color: var(--paleStone);
+  display: flex;
+  margin-bottom: var(--desktopMediumSpacer);
+  margin-inline: var(--dekstopLargeSpacer);
+  border-radius: 20px;
+  height: 400px;
+ 
+}
+
+.eventsArticle img {
+  height: 100%;
+  width: 40%;
+  display: block;
+  object-fit: cover;
+  margin-right: var(--dekstopLargeSpacer);
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.eventsArticle div {
+  padding-left: var(--desktopSmallSpacer);
+  padding-block: var(--mobileSmallSpacer);
+}
+
+.eventsArticle p {
+  line-height: 200%;
+  font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+}
+
+
+
+
+.eventsArticle td {
+  text-align: left;
+  padding: 0.9rem 0 0.9rem 0;
+  border: none;
+  width: 100%;
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+
+
+}
+
+.eventsTable td:nth-child(odd) {
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+
+.eventsTable {
+  padding-top: 1rem;
+  margin: 0;
+  width: 70%;
+}
+
+/* Events slut */
+/* _______________________________________________________________________________________________________________________________ */
+
 
 /* ____________________________________________________________________________________________________________________________________________ */
 /* Børn og unge + RSOK'kerne + Hvad er O-kort + Kort og kompas ---- de 4 undersider*/
@@ -585,46 +651,6 @@ font-size: clamp(1rem, 1.2vw, 2rem);
 
 
 
-
-
-
-
-
-
-
-
-/* ______________________________________________________________________________________________________________________________ */
-/* Events */
-
-.eventHero {
-  width: 100%;
-  border-radius: 0;
-}
-
-.eventsArticle {
-  background-color: red;
-  display: flex;
-  margin-bottom: var(--dekstopLargeSpacer);
-}
-
-article img {
-  height: 300px;
-  width: 500px;
-  display: block;
-  object-fit: cover;
-  margin-right: var(--dekstopLargeSpacer);
-}
-
-.eventsArticle span p {
-  font-weight: bold;
-}
-
-/* Events slut */
-/* _______________________________________________________________________________________________________________________________ */
-
-
-
-
 /* _________________________________________________________________________________________________________________________________ */
 /* Godt at vide */
 
@@ -721,40 +747,42 @@ article img {
 
 /* _________________________________________________________________________________________________________________________________ */
 /* medlemsskab */
+
 .konArt {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 article h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-align: center;
+  margin-block: var(--desktopSmallSpacer);
   padding-block: var(--desktopSmallSpacer);
+  text-align: center;
 }
 
-table {
+.medlemTable {
   border-collapse: collapse;
   width: 70%;
-  margin: 50px auto;
-  text-align: center;
+  margin-bottom: var(--desktopMediumSpacer);
 }
 
 td {
   border: 1px solid black;
-  padding: 24px;
+  padding: 1.5rem;
+  text-align: left center;
 }
 
 .konArt p {
-  text-align: left;
-  margin-inline: 20rem;
+  width: 70%;
+  margin: 0 auto;
   line-height: 150%;
   padding-bottom: var(--desktopSmallSpacer);
+  
 }
 
-.konArt p:nth-last-of-type(1) {
-  padding-bottom: 7.6rem;
+.konArt p:last-child {
+  margin-bottom: var(--dekstopLargeSpacer);
 }
 
 /* medlemsskab slut */
@@ -823,7 +851,6 @@ td {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-inline: ;
 }
 
 .omoSmallCardWrapper h3{
@@ -1006,19 +1033,6 @@ footer {
 /* _______________________________________________________________________________________________________________ */
 /* MEDIA QUERRIES */
 
-@media screen and (max-width: 1359px) {
-  .events {
-    padding: var(--desktopSmallSpacer);
-  }
-
-  .eventsArticle img {
-    margin-right: var(--desktopMediumSpacer);
-  }
-
-  .eventsArticle td {
-    padding-bottom: 1.2rem;
-  }
-}
 /* ____________________________________________________________________________________________________________________________________ */
 
 
@@ -1459,22 +1473,22 @@ ________________________________________________________________________________
 /* ____________________________________________ */
 /* Medlemsskab */
     
-.konArt h2 {
- font-size: 2rem;
- margin: 0;
-}
-    
-.konArt table {
- max-width: 90%;
- font-size: 1rem;
- margin-top: 0;
-}
+ .konArt h2 {
+   font-size: 2rem;
+   margin: 0;
+ }
 
-.konArt p {
- max-width: 100%;
- margin-inline: var(--mobileLargeSpacer);
- font-size: 1rem;
-}
+ .konArt table {
+   max-width: 90%;
+   font-size: 1rem;
+   margin-top: 0;
+ }
+
+ .konArt p {
+   max-width: 100%;
+   margin-inline: var(--mobileLargeSpacer);
+   font-size: 1rem;
+ }
 
 /* Medlemsskab slut
 ____________________________________________*/
@@ -1497,46 +1511,6 @@ ____________________________________________*/
 /* Godt at vide SLUT
 __________________________________________________ */
 
-
-
-
-/* _________________________________________________ */
-/* Events */
-
-.events {
-padding: 0.5rem;
-font-size: 2.5rem;
-}
-    
-.eventsArticle {
- flex-direction: column;
- height: auto;
- font-size: clamp(1rem, 1vw, 1.2rem);
- margin-inline: var(--desktopMediumSpacer);
-}
-    
- .eventsArticle img {
- width: 100%;
- border-bottom-left-radius: 0px;
- border-top-right-radius: 20px;
-}
-    
- .eventsArticle td:nth-child(odd) {
- font-weight: bold;
- padding-right: 2rem;
- }
-    
-.eventsArticle table {
- padding-top: 2rem;
-}
-    
-    
-.eventsArticle td {
- padding-bottom: 1rem;
-}
-
-  /* Events SLUT 
-  ____________________________________________________________________*/
 
 
   /* _________________________________________________________________ */
@@ -1632,7 +1606,30 @@ margin-bottom: var(--mobileLargeSpacer);
 
 
 
+/* Events */
 
+.events {
+ padding: .5rem;
+ font-size: 2.5rem;
+}
+    
+.eventsArticle {
+flex-direction: column;
+height: auto;
+font-size: clamp(1rem, 1vw, 1.2rem);
+margin-inline: var(--desktopMediumSpacer);
+}
+
+.eventsArticle td {
+width: 0;
+}
+    
+    
+.eventsArticle img {
+ width: 100%;
+ border-bottom-left-radius: 0px;
+ border-top-right-radius: 20px;
+}
 
 
 
@@ -1650,10 +1647,15 @@ margin-bottom: var(--mobileLargeSpacer);
 }
 
 @media screen and (max-width: 625px) {
-  .events {
-    padding: 0.2rem;
-    font-size: 2rem;
-  }
+    .events {
+        padding: .2rem;
+        font-size: 2rem;
+      }
+    
+      .eventsArticle {
+        margin-inline: 1.5rem;
+    
+      }
 }
 
 @media screen and (max-width: 400px) {
