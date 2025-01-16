@@ -230,6 +230,42 @@ nav i {
 /* ____________________________________________________________________________________________________________________________________________________________________ */
 /* Her styles MAIN */
 
+
+
+/* ____________________________________________________________________________________________________________________________________________ */
+/* Børn og unge + RSOK'kerne + Hvad er O-kort + Kort og kompas ---- de 4 undersider*/
+
+.gav4Sider {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  gap: var(--desktopSmallSpacer);
+  padding-inline: var(--desktopSmallSpacer);
+  margin-block: var(--dekstopLargeSpacer);
+}
+
+.gav4Sider img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.gav4Sider p {
+  font-size: 1.375rem;
+  padding-bottom: var(--desktopSmallSpacer);
+}
+
+.gav4Sider i {
+  font-size: 2rem;
+  padding-bottom: var(--desktopSmallSpacer);
+  color: var(--deepForest);
+}
+
+/* Børn og unge+RSOK'kerne + Hvad er O-kort + Kort og kompas ---- de 4 undersider SLUT */
+/*________________________________________________*/
+
+
+
+
 /* _________________________________________________________________________________________________________________________________________ */
 /* FORSIDE */
 
@@ -548,36 +584,7 @@ table a {
 
 
 
-/* ____________________________________________________________________________________________________________________________________________ */
-/* Børn og unge + RSOK'kerne + Hvad er O-kort + Kort og kompas ---- de 4 undersider*/
 
-.gav4Sider {
-  display: grid;
-  grid-template-columns: 45% 1fr;
-  gap: var(--desktopSmallSpacer);
-  padding-inline: var(--desktopSmallSpacer);
-  margin-block: var(--dekstopLargeSpacer);
-}
-
-.gav4Sider img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-}
-
-.gav4Sider p {
-  font-size: 1.375rem;
-  padding-bottom: var(--desktopSmallSpacer);
-}
-
-.gav4Sider i {
-  font-size: 2rem;
-  padding-bottom: var(--desktopSmallSpacer);
-  color: var(--deepForest);
-}
-
-/* Børn og unge+RSOK'kerne + Hvad er O-kort + Kort og kompas ---- de 4 undersider SLUT */
-/*________________________________________________*/
 
 
 
@@ -622,7 +629,6 @@ article img {
 .wideCards {
   width: 100%;
   align-items: center;
-  padding: var(--dekstopLargeSpacer);
 }
 .wideCard {
   width: 90%;
@@ -954,7 +960,17 @@ footer {
     font-weight: var(--fw-semibold);
 }
 
+.footerPolitik {
+  display: grid;
+  place-items: center;
+  gap: var(--desktopSmallSpacer);
+}
 
+.footerPolitik a {
+  color: black;
+  font-size: 1.375rem;
+  font-weight: var(--fw-semibold);
+}
 
 
 /* _______________________________________________________________________________________________________________ */
@@ -990,6 +1006,15 @@ footer {
 
   nav {
     height: 80px;
+  }
+
+  nav a img {
+    height: 60px;
+    display: block;
+  }
+
+  nav i {
+    font-size: 2rem;
   }
 
 
@@ -1114,6 +1139,13 @@ ________________________________________________________________________________
   nav ul {
     display: none;
   }
+
+  .login {
+    display: none;
+  }
+
+
+
 /* _______________________________________________________________________________________________________________ */
 /* MEDIA QUERRIES */
 
