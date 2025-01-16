@@ -549,11 +549,35 @@ table a {
 
 
 /* ____________________________________________________________________________________________________________________________________________ */
-/* De 4 undersider til GAV */
+/* Børn og unge + RSOK'kerne + Hvad er O-kort + Kort og kompas ---- de 4 undersider*/
 
+.gav4Sider {
+  display: grid;
+  grid-template-columns: 45% 1fr;
+  gap: var(--desktopSmallSpacer);
+  padding-inline: var(--desktopSmallSpacer);
+  margin-block: var(--dekstopLargeSpacer);
+}
 
-/* De 4 undersider til GAV */
-/* ____________________________________________________________________________________________________________________________________________________ */
+.gav4Sider img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.gav4Sider p {
+  font-size: 1.375rem;
+  padding-bottom: var(--desktopSmallSpacer);
+}
+
+.gav4Sider i {
+  font-size: 2rem;
+  padding-bottom: var(--desktopSmallSpacer);
+  color: var(--deepForest);
+}
+
+/* Børn og unge+RSOK'kerne + Hvad er O-kort + Kort og kompas ---- de 4 undersider SLUT */
+/*________________________________________________*/
 
 
 
@@ -932,6 +956,7 @@ footer {
 
 
 
+
 /* _______________________________________________________________________________________________________________ */
 /* MEDIA QUERRIES */
 
@@ -1060,6 +1085,20 @@ Træninger */
   max-height: 42rem;
 }
 
+/* Træninger SLUT
+______________________________________________________________________________________________________ */
+
+
+/* ________________________________________________________________________________________________ */
+/* 4 undersider */
+
+  .gav4Sider {
+    grid-template-columns: 1fr;
+    margin-block: var(--desktopMediumSpacer);
+  }
+
+/* 4 undersider */
+/* ______________________________________________________________________________________________________________ */
 }
 
 
@@ -1403,8 +1442,32 @@ font-size: 2.5rem;
   ____________________________________________________________________*/
 
 
+  /* _________________________________________________________________ */
+    /* 4 undersider */
+  
+    .content h2 {
+      font-size: clamp(1.2rem, 2vw, 1.6rem);
+    }
+  
+    .gav4Sider {
+      margin-top: var(--mobileLargeSpacer);
+    }
+  
+    .gav4Sider img {
+      height: 400px;
+    }
+  
+    .gav4Sider p {
+      font-size: clamp(1rem, 2vw, 1.4rem);
+      padding-bottom: var(--desktopSmallSpacer);
+    }
 
+
+/* 4 undersider */
+/* _______________________________________________________________ */
 }
+
+
 
 @media screen and (min-width: 900px) {
   nav .hamburger-menu {
@@ -1480,3 +1543,4 @@ align-items: center;
     padding-bottom: var(--mobileSmallSpacer);
   }
 }
+
