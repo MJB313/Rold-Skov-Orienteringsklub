@@ -450,6 +450,7 @@ ________________________________________________________________________________
 
 .omkIntro img {
   height: 75%;
+  width: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 20px;
@@ -475,7 +476,6 @@ font-size: clamp(1rem, 1.2vw, 2rem);
 .employeeCardWrapper {
   display: flex;
   justify-content: space-between;
-  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 7.5rem;
 }
 
@@ -539,6 +539,7 @@ font-size: clamp(1rem, 1.2vw, 2rem);
 }
 
 .bestyrelsesmedlemmer {
+
   margin-bottom: 7.5rem;
 }
 
@@ -549,29 +550,30 @@ font-size: clamp(1rem, 1.2vw, 2rem);
 /* Tabel */
 
 
-td:nth-child(odd) {
+.omkTable td:nth-child(odd) {
     padding-right: 3rem;
 }
 
-td {
+.omkTable td {
     border: 1px solid black;
     font-size: 1.5rem;
     padding: 1rem;
     width: 50%;
 }
 
-td:nth-child(even) {
+.omkTable td:nth-child(even) {
     font-weight: bold;
 }
 
-table {
+.omkTable {
     width: 80%;
     margin:  0 auto var(--desktopMediumSpacer) auto;
     border-collapse: collapse;
 }
 
-table a {
+.omkTable td a {
     color: black;
+    
 
 }
 
@@ -630,6 +632,7 @@ article img {
   width: 100%;
   align-items: center;
 }
+
 .wideCard {
   width: 90%;
   margin: 0 auto var(--desktopMediumSpacer) auto;
@@ -774,40 +777,67 @@ td {
 
 .omoMain h2 {
   text-align: center;
-  margin-block: var(--desktopSmallSpacer);
+  margin-block: var(--desktopSMSpacer);
+  font-size: 2.5rem;
+}
+
+.omoArticle h2 {
+  margin-bottom: 0;
+  padding-block: var(--desktopSMSpacer) var(--mobileSmallSpacer);
 }
 
 .omoWidecard {
-  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin: 0 auto var(--desktopMediumSpacer) auto;
+  padding-inline: var(--dekstopLargeSpacer);
   height: 32rem;
-  margin: 0 auto;
-  background-color: #f5f1e4;
   border-radius: 0.625rem;
+
+
+}
+
+.omoTekst {
+  background-color: var(--paleStone);
+  border-radius: 0 20px 20px 0;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: row;
 }
 
 #omoWidecardImg {
-  max-width: 50vw;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center center;
-  border-radius: 20px;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .omoWidecard .omoWidecardContent {
-  width: 100%;
-  text-align: left;
   line-height: 1.8rem;
-  padding-inline: var(--desktopSMSpacer);
+  padding: var(--desktopSMSpacer);
 }
 
-.test {
+.omoSmallCardWrapper {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  height: 100%;
+  justify-content: space-between;
+  padding-inline: ;
+}
+
+.omoSmallCardWrapper h3{
+  padding-block: var(--mobileSmallSpacer);
+}
+
+.omoSmallCard {
+  width: 25%;
+}
+
+.omoSmallCard img {
   width: 100%;
 }
+
 
 /* om orienteringsløb slut */
 /* __________________________________________________________________________________________________________________________________ */
@@ -820,7 +850,7 @@ td {
 /* _________________________________________________________________________________________________________________________________ */
 /* træninger */
 
-.smallCardWrapper {
+.traSmallCardWrapper {
   display: flex;
   justify-content: space-between;
   padding-inline: var(--dekstopLargeSpacer);
@@ -828,34 +858,33 @@ td {
 
 .traH2 {
   text-align: center;
-  padding-top: var(--desktopSmallSpacer);
+  padding-block: var(--desktopMediumSpacer);
+  font-size: 3.125rem;
 }
 
 .traCard {
-  width: 29%;
-  height: 25rem;
-  background-color: white;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding-top: var(--desktopSmallSpacer);
+  width: 30%;
+  height: 30rem;
+  background-color: white;
+  border-radius: 20px;
   padding-bottom: var(--desktopMediumSpacer);
 }
 
 .traCard img {
   width: 100%;
-  height: 70%;
+  height: 250px;
   object-fit: cover;
-  object-position: center center;
+  object-position: center 70%;
   border-radius: 20px;
 }
 
-section .traCard h3 {
+.traCard h3 {
   font-size: clamp(1.2rem, 1.8vw, 1.8rem);
   font-weight: var(--fw-semibold);
   text-align: center;
-  padding-inline: 0.5rem;
+  padding-block: 0.8rem;
 }
 
 .traCard p {
@@ -880,23 +909,24 @@ section .traCard h3 {
 }
 
 .traMain {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-inline: var(--dekstopLargeSpacer);
+  gap: var(--desktopSmallSpacer);
+  margin-bottom: var(--dekstopLargeSpacer);
 }
 
 .traMain img {
-  max-width: 50%;
+  width: 100%;
   max-height: 37rem;
-  margin-left: var(--dekstopLargeSpacer);
-  margin-right: var(--desktopSmallSpacer);
-  margin-bottom: var(--desktopMediumSpacer);
   border-radius: 20px;
   object-fit: cover;
   object-position: center center;
 }
 
 .traBody {
-  max-width: 50%;
-  padding-right: var(--dekstopLargeSpacer);
+  width: 100%;
+
 }
 
 .traBody p {
@@ -1017,12 +1047,14 @@ footer {
     font-size: 2rem;
   }
 
+  
+
 
 
   /* Intro sektion */
 
   .intro p {
-    padding: var(--mobileSmallSpacer);
+    padding: var(--desktopSmallSpacer);
     font-size: 1rem;
   }
 
@@ -1082,7 +1114,7 @@ ________________________________________________________________________________
 
 
   /* ________________________________________________________________________________________________________ */
-    /* Om orienteringsklub intro */
+    /* Om klubben  */
 
     .omkMain {
         padding-inline: var(--desktopSmallSpacer);
@@ -1101,13 +1133,42 @@ ________________________________________________________________________________
         padding-block: var(--mobileLargeSpacer);
     }
 
-/* Om orienteringskluv SLUT
+/* Om klubben SLUT
 _________________________________________________________________________________________________________________ */
+
+
+/* _____________________________________________________________________________________________ */
+/* Om Orienteringsløb */
+.omoWidecard {
+  
+  padding-inline: var(--mobileSmallSpacer);
+
+
+}
+
+
+
+
+
 
 /* ___________________________________________________________________________________________________
 Træninger */
-.traMain img {
-  max-height: 42rem;
+.traSmallCardWrapper {
+  padding-inline: var(--mobileLargeSpacer);
+}
+
+.traCard {
+  height: 23rem;
+  padding-bottom: 1rem;
+  
+}
+
+.traCard img {
+  height: 180px;
+}
+
+.traMain {
+  padding-inline: var(--mobileLargeSpacer);
 }
 
 /* Træninger SLUT
@@ -1134,7 +1195,7 @@ ________________________________________________________________________________
   /* _____________________________________________________________________________________________________________ */
   /* Forside */
 
-  /* NAV */
+  /* HEADER */
 
   nav ul {
     display: none;
@@ -1144,6 +1205,10 @@ ________________________________________________________________________________
     display: none;
   }
 
+.intro h1 {
+font-size: 2rem;
+padding-block: var(--mobileLargeSpacer);
+}
 
 
 /* _______________________________________________________________________________________________________________ */
@@ -1362,23 +1427,23 @@ ________________________________________________________________________________
 
     /* Tabel */
 
-    tr {
+    .omkTable tr {
         display: grid;
         border-bottom: 1.5px solid black;
 
     }
 
-    td {
+   .omkTable td {
         width: 100%;
         border:none;
         font-size: clamp(1.2rem, 4vw, 2rem);
     }
 
-    td:nth-of-type(even){
+  .omkTable td:nth-of-type(even){
         padding-top:0;
     }
 
-    td:nth-of-type(odd) {
+  .omkTable td:nth-of-type(odd) {
         padding-bottom: 0.5;
     }
 
@@ -1456,7 +1521,7 @@ font-size: 2.5rem;
  border-top-right-radius: 20px;
 }
     
- td:nth-child(odd) {
+ .eventsArticle td:nth-child(odd) {
  font-weight: bold;
  padding-right: 2rem;
  }
@@ -1497,7 +1562,83 @@ font-size: 2.5rem;
 
 /* 4 undersider */
 /* _______________________________________________________________ */
+
+
+/* __________________________________________________________________ */
+/* Træninger */
+
+.traSmallCardWrapper {
+  flex-direction: column;
+  padding-inline: var(--mobileSmallSpacer);
 }
+
+.traCard {
+  width: 100%;
+  height: 450px;
+  padding-bottom: 0;
+}
+
+.traCard img {
+  height: 70%;
+}
+
+.traMain {
+  grid-template-columns: 1fr;
+  padding-inline: var(--mobileSmallSpacer);
+}
+
+.traH2{
+  font-size: 1.5rem;
+  padding-block: var(--mobileLargeSpacer);
+}
+
+.traCard h3 {
+  font-size: clamp(1.5rem,4vw,2rem);
+}
+
+.traCard p {
+  font-size: clamp(1rem,2.5vw,1.3rem);
+}
+
+
+/* ______________________________________________________ */
+/* Om Orienteringsløb */
+
+.omoWidecard {
+grid-template-columns: 1fr;
+height: auto;
+margin-bottom: var(--mobileLargeSpacer);
+}
+
+#omoWidecardImg {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.omoTekst {
+
+  border-radius: 0 0 20px 20px;
+}
+
+.omoMain h2 {
+  font-size: clamp(2rem,5vw,3rem);
+  padding-bottom: var(--mobileSmallSpacer);
+}
+
+.omoMain h1 {
+  font-size: clamp(2.2rem, 7vw, 3rem);
+  padding-block: var(--mobileLargeSpacer);
+}
+
+
+
+
+
+
+
+}
+
+
 
 
 
@@ -1532,47 +1673,5 @@ font-size: 2.5rem;
 
 }
 
-
-
-/* Træninger */
-.traCard {
- width: 90%;
- height: 20rem;
- padding: 0;
-}
-    
-.traH2 {
- padding-bottom: var(--mobileMediumSpacer);
-}
-    
-.traCard p {
- margin-bottom: var(--mobileSmallSpacer);
-}
-
-
-
-.traMain {
-flex-direction: column;
-align-items: center;
-}
-
-  .traMain img {
-    max-width: 90%;
-    margin: 0 auto var(--mobileMediumSpacer) auto;
-    margin-bottom: var(--mobileSmallSpacer);
-  }
-
-  .traBody {
-    max-width: 90%;
-    padding-right: 0;
-  }
-
-  .traBody p {
-    text-align: left center;
-  }
-
-  .traeningerBottomP {
-    padding-bottom: var(--mobileSmallSpacer);
-  }
 }
 

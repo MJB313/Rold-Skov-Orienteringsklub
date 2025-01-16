@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Om Orienteeringløb | Rold Skov Orienteringsklub</title>
+    <title>Om Orienteringsløb | Rold Skov Orienteringsklub</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <link
       rel="stylesheet"
@@ -25,20 +25,18 @@
   <body>
     <header>
       <nav>
-        <a href="index.html" aria-label="Homepage">
+        <a href="index.html">
           <img
             src="./assets/images/RoldSkovOK-Logo.png"
-            alt="Logo of Rold Skov Orienteering Club"
+            alt="Logo af Rold Skov orienteringsklub"
+            title="Rold Skov Orienteringsklub logo"
           />
         </a>
 
-        <!-- Hamburger Menu -->
+        <!-- Taget fra denne Codepen: https://codepen.io/alvarotrigo/pen/yLzaPVJ  og justeret til vores layout-->
+
         <div class="hamburger-menu">
-          <input
-            id="menu__toggle"
-            type="checkbox"
-            aria-label="Toggle navigation menu"
-          />
+          <input id="menu__toggle" type="checkbox" />
           <label class="menu__btn" for="menu__toggle">
             <span></span>
           </label>
@@ -51,34 +49,32 @@
             </li>
             <li><a class="menu__item" href="træninger.html">Træninger</a></li>
             <li>
-              <a class="menu__item" href="omOrienteringskloeb.html"
+              <a class="menu__item" href="omOrienteringsklubben.html"
                 >Om orienteringsløb</a
               >
             </li>
             <li>
               <a class="menu__item" href="medlemsskab.html">Medlemsskab</a>
             </li>
-            <li>
-              <a class="menu__item" href="#" aria-label="Log in">Log in</a>
-            </li>
+            <li><a class="menu__item" href="#">Log in</a></li>
           </ul>
         </div>
+        <!-- Codepen ____________________________________________________________________ -->
 
-        <!-- Desktop Navigation -->
         <ul class="desktopNavHover">
           <li><a href="omKlubben.html">Om klubben</a></li>
           <li><a href="godtAtVide.html">Godt at vide</a></li>
           <li><a href="træninger.html">Træninger</a></li>
           <li><a href="events.html">Events</a></li>
           <li>
-            <a href="omOrienteringsloeb.html">Om orienteringsløb</a>
+            <a href="omOrienteringsklubben.html">Om orienteringsløb</a>
           </li>
           <li><a href="medlemsskab.html">Medlemsskab</a></li>
         </ul>
 
         <div class="login">
-          <a href="#" aria-label="User profile"
-            ><i class="fa-solid fa-user"></i
+          <a href="#"
+            ><i class="fa-solid fa-user" title="Log in bruger ikon"></i
           ></a>
           <a href="#">Log in</a>
         </div>
@@ -87,18 +83,20 @@
 
     <main class="omoMain">
       <img
-        id="omoHeroImg"
+        class="hero"
         src="./assets/images/Orienteringsløb.jpg"
-        alt="Four RSOK members posing for a group photo"
+        alt="Rold Skov Orienteringsklub løb start"
+        title="RSOK løb start"
       />
 
-      <h2>Om orienteringsløb</h2>
+      <h1>Om orienteringsløb</h1>
 
       <section class="omoWidecard">
         <img
           id="omoWidecardImg"
           src="./assets/images/RSOK-glad-bestyrrer-med-orienterings-kort.jpg"
-          alt="Board member holding an orienteering map"
+          alt="RSOK medarbejder der viser et kort"
+          title="RSOK medarbejder der viser et kort"
         />
         <div class="omoTekst">
           <p class="omoWidecardContent">
@@ -117,16 +115,17 @@
         </div>
       </section>
     </main>
+    <section class="futureEvents">
+      <h2>Kommende begivenheder</h2>
 
-    <section class="omoCards">
-      <h2>Find begivenheden på Facebook!</h2>
-      <div class="omoSmallCardWrapper">
-        <div class="omoSmallCard">
+      <div class="smallCardWrapper">
+        <div class="smallCard">
           <img
             src="./assets/images/RSOK-Nisserne.jpg"
             alt="Billede af RSOK medlemmer med nissehuer"
+            title="Billede af 2 medlemmer der har nissehuer på"
           />
-          <h2>Nissernes julesjov</h2>
+          <h3>Nissernes julesjov</h3>
           <p>Lørdag d. 21. december 2025 kl: 12:00</p>
           <a
             href="https://www.facebook.com/events/1112208383641247"
@@ -135,12 +134,13 @@
           >
         </div>
 
-        <div class="omoSmallCard">
+        <div class="smallCard">
           <img
             src="./assets/images/RSOK-vinterloeb.jpg"
             alt="Billede af RSOK medlemmer samlet i sneen"
+            title="RSOK medlemmer samlet udenfor i sneen"
           />
-          <h2>Tømmermændsløbet</h2>
+          <h3>Tømmermændsløbet</h3>
           <p>Onsdag d. 1 januar 2025 kl: 13:00</p>
           <a
             href="https://www.facebook.com/events/4146915512211718"
@@ -149,12 +149,13 @@
           >
         </div>
 
-        <div class="omoSmallCard">
+        <div class="smallCard">
           <img
             src="./assets/images/Rebild-kalkmineloeb.jpg"
-            alt="Billede af RSOK medlemmer med nissehuer"
+            alt="Løbere i Rebild kalkmine"
+            title="Løbere i Rebild kalkmine"
           />
-          <h2>Rebild kalkmineløb</h2>
+          <h3>Rebild kalkmineløb</h3>
           <p>Lørdag d. 20. september 2025 kl: 09:00</p>
           <a
             href="https://www.facebook.com/events/1127204795643789"
@@ -168,19 +169,13 @@
     <footer>
       <div class="footerWrapper">
         <div class="socialMedia">
-          <a
-            href="https://www.facebook.com/RoldSkovOK"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Rold Skov OK on Facebook"
-          >
+          <a href="https://www.facebook.com/RoldSkovOK" target="_blank">
             <i class="fa-brands fa-square-facebook" title="Facebook logo"></i>
           </a>
+
           <a
-            href="https://ww.instagram.com/roldskovorienteringsklub/?hl=da"
+            href="https://www.instagram.com/roldskovorienteringsklub/?hl=da"
             target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Rold Skov OK on Instagram"
           >
             <i class="fa-brands fa-square-instagram" title="Instagram logo"></i>
           </a>
@@ -189,7 +184,8 @@
         <div class="footerLogo">
           <img
             src="./assets/images/RoldSkovOK-Logo.png"
-            alt="Logo of Rold Skov Orienteering Club"
+            alt="Logo af Rold Skov orienteringsklub"
+            title="Rold Skov orienteringsklub logo"
           />
           <p>Copyright © 1942 - 2025 RoldSkovOK®</p>
         </div>
