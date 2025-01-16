@@ -665,6 +665,41 @@ table a {
 
 /* _________________________________________________________________________________________________________________________________ */
 /* medlemsskab */
+.konArt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-block: var(--desktopSmallSpacer);
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+td {
+  border: 1px solid black;
+  padding: 24px;
+}
+
+.konArt p {
+  text-align: left;
+  margin-inline: 20rem;
+  line-height: 150%;
+  padding-bottom: var(--desktopSmallSpacer);
+}
+
+.konArt p:nth-last-of-type(1) {
+  padding-bottom: 7.6rem;
+}
 
 /* medlemsskab slut */
 /* __________________________________________________________________________________________________________________________________ */
@@ -1317,7 +1352,28 @@ footer {
 
     }
 
+    /* ____________________________________________ */
+    /* Medlemsskab */
+    
+          .konArt h2 {
+              font-size: 2rem;
+              margin: 0;
+          }
+    
+          .konArt table {
+              max-width: 90%;
+              font-size: 1rem;
+              margin-top: 0;
+          }
+          
+        .konArt p {
+        max-width: 100%;
+        margin-inline: var(--mobileLargeSpacer);
+        font-size: 1rem;
+        }
 
+        /* Medlemsskab slut
+      ____________________________________________*/
 
 /* Godt at vide */
 
@@ -1376,7 +1432,8 @@ footer {
 }
 
 
-
-
-
-
+@media screen and (max-width: 400px) {
+  .konArt p:nth-last-of-type(1) {
+    padding-bottom: var(--mobileLargeSpacer);
+  }
+}
